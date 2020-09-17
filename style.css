@@ -1,5 +1,5 @@
 .yourDivClassThatContainsText {
-  /*position: absolute;*/
+  position: relative;
  /* width: 300px;
   height: 200px;*/
   /*z-index: 15;
@@ -11,8 +11,8 @@
 
 :root {
   /* Change this to change the appearance of the hexaons */
-  --hex-width: 150px; 
-  --hex-between: 32px;
+  --hex-width: 180px; 
+  --hex-between: 40px;
   
   /* Other hexagon dimentions */
   --hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
@@ -33,14 +33,19 @@
 }
 
 #DivForHoverItem {
-    height: 50px;
-    width: 400px;
+    /*height: 250px;
+    width: 600px;
+     --hex-width: 180px; 
+  --hex-between: 40px;*/
 }
 
 #HiddenText {
     display: none;
 }
-
+.yourDivClassThatContainsText p{
+	/*text-align: center;*/
+	margin: 65px;
+}
 #DivForHoverItem:hover #HiddenText {
     display:block;
 }
@@ -66,11 +71,11 @@
   cursor: pointer;
   display: flex;
   fill: white;
-  height: 80%;
+  height: 85%;
   justify-content: center;
   margin: var(--hex-border) 0;
   position: relative;
-  transition: var(--hex-transition);
+  /*transition: var(--hex-transition);*/
   width: var(--hex-width);
   /*padding: 20%;*/
   --color-hex-hover:   grey;
@@ -90,6 +95,8 @@
   border-top: var(--hex-border) solid var(--color-hex-default);
   top: 100%;
   width: 0;
+   --hex-width: 180px; 
+  --hex-between: 40px;
 }
 .hexagon::before {
   border-bottom: var(--hex-border) solid var(--color-hex-default);
@@ -97,15 +104,17 @@
 }
   
 .hexagon:hover {
-  background-color: grey;
-  --color-hex-hover:   grey;
-  content: "Hello";
+  background-color: pink;
+  --color-hex-hover:   pink;
+  
+  height: 140px;
+  width: 180px;
 }
 .hexagon:hover::after,
 .hexagon:hover::before {
   border-top-color: var(--color-hex-hover);
   border-bottom-color: var(--color-hex-hover);
-  --color-hex-hover:   grey;
+  --color-hex-hover:   pink;
   }
  
 .hexagon:nth-child(8n + 5),
@@ -117,7 +126,7 @@
 
 .hexagon > svg {
   height: 75%;
-  transition: var(--hex-transition);
+  /*transition: var(--hex-transition);*/
 }
 
 
