@@ -1,41 +1,83 @@
 @media (min-width: 370px) {
-  /*.container{
-    width: 105%;
-
-  }*/
-  /*body{
-    width: 116%;
-  }
-   .container1{
-    width: 150%;
-
-  }*/
-  /*section {
-  height: 80vh;
-  scroll-snap-align: end;
+  .responsive {
   position: relative;
+  left: 50px;
+  right:20px;
+  width: 80vh;
+  margin-top: 20vh;
+  /*/display: block;/*/
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 50%;
+  height: 200vh;
+  min-height: 500px;
+  vertical-align: bottom ;
+
 }
-*/
+
+.container1{
+  /*margin-left: -5px; */
+   position: relative; 
+/left: -40px;/
+}
+}
+@media (max-width: 640px){
+   .responsive {
+  //width: 20%;//
+  position: relative;
+   left: 50px;
+  width: 50vh;
+  margin-top: 10vh;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 80%;
+    height: 70vh;
+  /min-height: 500px;/
+  /vertical-align: bottom ;/
+  
+ 
+}
+.container1{
+  margin-left: 40px; 
+   position: relative; 
+left: -30px;
+}
 }
 @media (min-width: 350px) {
- /* .container{
-    width: 107%;
 
-  }*/
-  .container1{
-    width: 115%;
+ .responsive {
+  //width: 20%;//
+  position: relative;
+   left: 50px;
+  width: 50vh;
+  margin-top: 20vh;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 70%;
+    height: 80vh;
+  /min-height: 500px;/
+  vertical-align: bottom ;
+  
+ 
+}
+  
+.container1{
+  margin-right: -55px; 
+   position: relative; 
+left: -40px;
+}
+  .container{
+    position: relative; 
+left: -40px;
+}
 
-  }
   body{
     width: 116%;
-    /*min-width: 35vh;*/
-    /*max-width: 39%;*/
+  
   }
- /* section {
-  height: 80vh;
-  scroll-snap-align: end;
-  position: relative;
-}*/
+
   }
 @media (min-width: 768px) {
   body{
@@ -43,17 +85,15 @@
   }
    /*.container{
     width: 100%;
-
   }*/
   .container1{
     width: 107%;
+    position: relative; 
+left: -50px;
 
   }
-  /*section {
-  height: 80vh;
-  scroll-snap-align: end;
-  position: relative;
-}*/
+  
+  
   }
 @media (min-width: 992px){
   body{
@@ -67,6 +107,15 @@
 }
 }
 @media (min-width: 1200px){
+   .responsive {
+  width: 50%;
+  height: auto;
+    display: block;
+ /* margin-left:auto;
+  margin-right:auto;*/
+   margin-top: 0vh;
+  
+}
   section {
   height: 120vh;
   scroll-snap-align: end;
@@ -100,13 +149,31 @@
 }
 
 html, body {
-    /*max-width: 100%;*/
+    /max-width: 100%;/
     overflow-x: hidden;
-    /*overflow-y: hidden;*/
+    /overflow-y: hidden;/
 }
 .center {
   display: block;
   margin-left:auto;
   margin-right:auto;
-  /*width: 50%;*/
+   position: relative; 
+left: -30px;
+  /*/width: 50%;/*/
+}
+.container{
+    position: relative; 
+left: -10px;
+}
+
+ .responsive {
+  position: relative;
+   /* margin-top: 0vh;*/
+
+  right: -30px;
+ /* width: 65%;
+  height: 150%;
+   display: block;
+  margin-left:auto;
+  margin-right:auto;*/
 }
