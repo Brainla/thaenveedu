@@ -21,7 +21,10 @@ html, body {
   height: 120%;
   overflow: hidden;
 }
-body{
+*{
+    scroll-behavior: smooth;
+  }
+  body{
     background: black;
   }
   body .active{
@@ -42,13 +45,21 @@ body{
     scale: 1.1;
     transition-duration: 0.1s;
   }
+  .btn.special:hover{
+    scale: 1.0;
+    /transition-duration: 0.1s;/
+  }
+  .bi-hexagon.special:hover {
+    fill: #000;
+    /scale: 5;/
+    /transition-duration: 0.1s;/
+  }
   .bi-hexagon:hover .active{
     display: none;
   }
   .bi-hexagon:hover .inactive{
     display: block;
   }
-
 .parent{
   overflow: scroll;
   height: 120vh;
@@ -69,18 +80,7 @@ section {
   position: relative;
 }
 
-.one {
-  background-color: red;
-}
-.two {
-  background-color: blue;
-}
-.three {
-  background-color: grey;
-}
-.four {
-  background-color: green;
-}
+
 
   </style>
 </head>
@@ -89,10 +89,11 @@ section {
 </h3> -->
 <body>
 <!-- <div> <h1>  hello world!!!!!!</h1></div> -->
+<!-- <br><br><br><br><br> -->
 <div class="parent">
 <div class="hello"> 
 <img src="logohoney.png"  width="200" height="200" class="center">
-<!-- <br><br><br><br><br> -->
+<br><br>
 <div class="container" >
 <div class="container vertical-center" >
   <div class="container1">
@@ -117,30 +118,75 @@ section {
       </svg>    
       <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
-      <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">BUY NOW</text>
-      <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px " data-toggle="modal" data-target="#exampleModalCenter";>Click here</text>
-      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
+      
 
-        <h5 class="modal-title" id="exampleModalLongTitle">        Buy Now
-</h5>
+      <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">BUY NOW</text>
+      <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;" data-toggle="modal" data-target="#exampleModalCenter">Click here</text>
+
+      <!-- Modal -->
+<div class="modal fade bg-black" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-light text-dark">
+      <div class="modal-header" style="background: #FFD700;">
+        <h5 class="modal-title" id="exampleModalLongTitle">Buy now</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        ...
+      <div class="modal-body text-center">
+    <div class="form-group row">
+      <label for="example-address-input" class="col-2 col-form-label">Quantity</label>
+      <div class="col-10">
+      <input class="form-control" type="number" value="1" min="1" id="example-address-input">
       </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-number-input" class="col-2 col-form-label">Address</label>
+      <div class="col-10">
+      <input class="form-control" type="text" value="1" min="1" id="example-number-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="exampleFormControlSelect1" class="col-2 col-form-label">Boundary</label>
+      <div class="col-10">
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Chennai</option>
+      <option>Coimbatore</option>
+      <option>Madurai</option>
+      <option>Erode</option>
+      <option>Outside TN</option>
+    </select>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-mobile-input" class="col-2 col-form-label">Mobile</label>
+      <div class="col-10">
+      <input class="form-control" type="text" value="1" min="1" id="example-mobile-input">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="example-gpay-input" class="col-2 col-form-label">GPay</label>
+      <div class="col-10">
+      <input class="form-control" type="text" value="1" min="1" id="example-gpay-input">
+      </div>
+    </div>
+      </div>
+      
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        <svg width="15%" height="15%" viewBox="0 0 16 16" class="bi bi-hexagon special" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+      <text class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 5px;color: black;">Pay</text>
+      </svg>  
+        <!-- <button type="button" class="btn rounded-circle p-3" style="background: #FFD700;">Pay</button> -->
+
       </div>
     </div>
   </div>
 </div>
-      </svg>  
+</svg>
+
+ 
       <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
       <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="#FFD700" stroke-width="0px" dy=".3em" style="font-size: 2px;">ABOUT US</text>
@@ -194,7 +240,7 @@ section {
     <div class="carousel-item">
       
 
-           <img src="one.png" width="525" height="525" class="responsive">
+           <img src="three.png" width="525" height="525" class="responsive">
 
     </div>
   </div>
@@ -222,7 +268,7 @@ section {
     <div class="carousel-item active">
    
 
-           <img src="one.png" width="525" height="500" class="responsive">
+           <img src="five.png" width="525" height="500" class="responsive">
           <!-- <br><br><br><br> -->
                    
 
