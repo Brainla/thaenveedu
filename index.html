@@ -72,10 +72,47 @@
          }
          /*/Responsiveness/*/
       @media (min-width: 360px) {
-       /*  html,body{
-            height: 150%;
-            width: 150%;
-         }*/
+        h3
+         {
+
+            font-size: 57px;
+         }  
+
+
+
+         #insta{
+
+   
+   width: 55px;
+   height: 62px;
+   align-items: center;
+}
+#insta{
+   position: relative;
+   margin-right: 130px;
+   height: 115px;
+   width: 105px;
+}
+#wh{
+   height: 100px;
+}
+         .social{
+                        position: relative;
+
+            display: flex;
+            margin-left: 161px;
+            /*margin-bottom: 50%;*/
+
+
+         }
+         .whats{
+           margin-bottom: 50%;
+            align-items: center;
+            display: flex;
+            float: center;
+         
+
+         }
          img{
             width: 100%;
             height: 60vh;
@@ -85,7 +122,7 @@
             height: 15rem;
          }
          .responsive{
-            margin-bottom: 25px;
+            margin-bottom: 30px;
          }
           .center {
                   display: block;
@@ -93,8 +130,24 @@
   margin-right:auto;
    position: relative; 
      width: 400px;
+
+
+
             height: 440px;
 
+}
+.hex{
+   height: 40vh;
+   }      
+
+#facts{
+   height: 70vh;
+}
+#about{
+   height: 70vh;
+}
+#products{
+   height: 70vh;
 }
        
       }
@@ -127,8 +180,56 @@
             height: 220px;
 
 }
-   
-      }
+   .social{
+   display: flex;
+   position: absolute;
+  width: 30px;
+  height: 20px;
+  z-index: 15;
+  /*/top: 20%;/*/
+  left: 50%;
+  margin: -100px 0 0 -150px;
+
+}
+.whats{
+   width: 50px;
+   height: 50px;
+   align-items: center;
+}
+
+
+.hex{
+   height: 80vh;
+   }      
+
+#facts{
+   height: 100vh;
+}
+#about{
+   height: 100vh;
+}
+#products{
+   height: 100vh;
+}
+#insta{
+
+
+   width: 55px;
+   height: 62px;
+   align-items: center;
+}
+#wh{
+   height: 55px;
+}
+ h3
+         {
+
+            font-size: 30px;
+         }  
+
+}
+
+
    </style>
     <h3 class="text-center font-weight-bold">
          THAENVEEDU
@@ -137,7 +238,7 @@
       <img src="logohoney.png"  class="center">
 
       
-      <section class="container vertical-center" style="height: 100vh;">
+      <section class="container vertical-center" >
          <div class="hex">
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
@@ -243,16 +344,34 @@
             </div>
          </div>
          </div>
+          <div class="social">
+   <br>
+
+   <br>  <br>  <br>  <br>  
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      <a href="https://www.instagram.com/shanmugam.baskar/" >
+         <br>   
+
+         <img src="insta.png" class="whats" id="insta">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </a>
+            
+
+
+       <a href="https://wa.me/919841695764">
+         <br>
+         <img src="wa.png" class="whats" id="wh">
+      </a>
+
+</div>
       </section>
-      <!-- <br><br><br><br><br>
-
-
-      <br><br><br><br><br>
- -->
+     
       <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
-      <section class="container vertical-center" id="facts" style="height: 100vh;">
+      <section class="container vertical-center" id="facts" >
+         <br><br>
          <h3 class="text-center font-weight-bold">
            FACTS
          </h3>
@@ -284,10 +403,12 @@
             </a>
          </div>
       </section>
+      <br><br>
       <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
-      <section class="container vertical-center" id="about" style="height: 100vh;">
+      <section class="container vertical-center" id="about" >
+          <br><br>
          <h3 class="text-center font-weight-bold">
            ABOUT
          </h3>         <div id="carouselExampleIndicatorsabout" class="carousel slide" data-ride="carousel">
@@ -317,10 +438,12 @@
             </a>
          </div>
       </section>
+      <br><br>
       <hr style=" border: 0;
-         height: 2px;
+         height: 3px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
-      <section class="container vertical-center" id="products" style="height: 100vh;">
+      <section class="container vertical-center" id="products" >
+          <br><br>
 <h3 class="text-center font-weight-bold">
            PRODUCTS
          </h3>         
