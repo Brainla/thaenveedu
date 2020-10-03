@@ -76,7 +76,34 @@
          }
          /*/Responsiveness/*/
       @media (min-width: 360px) {
-        h3
+         .form-group{
+            height: 77px;
+         }
+         
+         .close{
+            font-size: 50px;
+
+         }
+.modal-title{
+   font-size: 37px;
+   text-align: center;
+}
+.modal-header{
+   height: 90px;
+}
+.modal-body {
+height:550px;
+font-size:19px;
+}
+.form-control
+{
+   height: 20px;
+   padding: 20px;
+}
+.example-mobile-input{
+   padding: 85px;
+}
+       h3
          {
 
             font-size: 57px;
@@ -167,6 +194,33 @@
          }
       }
       @media (min-width: 992px) {
+           .close{
+            font-size: 20px;
+
+         }
+          .form-group{
+            height: 40px;
+         }
+         .modal-title{
+   font-size: 25px;
+      text-align: center;
+
+}
+.modal-header{
+   height: 60px;
+}
+.modal-body {
+height:350px;
+font-size:15px;
+}
+.form-control
+{
+   height: 30px;
+   padding: 0px;
+}
+.example-mobile-input{
+   padding: 0px;
+}
          img{
             width: 400px;
             height: 550px;
@@ -228,6 +282,7 @@
 
             font-size: 30px;
          }  
+             
 
 }
 
@@ -260,17 +315,24 @@
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">BUY NOW</text>
+
+
                   <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;" data-toggle="modal" data-target="#exampleModalCenter">Click here</text>
                   <!-- Modal -->
                   <div class="modal fade bg-black" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                      <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content bg-light text-dark">
                            <div class="modal-header" style="background: #FFD700;">
-                              <h5 class="modal-title" id="exampleModalLongTitle">Buy now</h5>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h5 class="modal-title" id="exampleModalLongTitle" ><strong><b>BUY NOW </strong></b></h5>
                               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                               </button>
                            </div>
+                           <br><br>
                            <div class="modal-body text-center">
                               <div class="form-group row">
                                  <label for="example-address-input" class="col-2 col-form-label">Quantity</label>
@@ -315,7 +377,6 @@
                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
                               <div id="buy"></div>
-                              <!-- <button type="button" class="btn rounded-circle p-3" style="background: #FFD700;">Pay</button> -->
                            </div>
                         </div>
                      </div>
