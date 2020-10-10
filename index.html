@@ -344,8 +344,12 @@ font-size:15px;
                                  <!-- <script >location.reload();</script> -->
                                  <br><br><br><br><br>
                                  <div class="col-10">
-                                    <input class="form-control codeText"  type="text"  value="" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
+                                    <input type="text" id="box" style="text-align:center;">
+                                        <!-- <button type="button" onclick="getInputValue();">buy</button> -->
+   
+                                    <!-- <input class="form-control codeText"  type="text"  value="" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
 
+ -->
                                     <!-- onclick="window.location.reload(); -->
                                  </div>
                               </div><!-- 
@@ -393,7 +397,7 @@ font-size:15px;
   <p style="color:#FFD700;font-size:136%;"><strong><b>HAPPY SHOPPING :)</b></strong>     </p>    
                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <div><br><br></div>
-                              <div id="buy-now">
+                              <div id="buy-now" >
                               </div>
                            </div>
                         </div>
@@ -567,30 +571,78 @@ font-size:15px;
 <!-- <input type='text' name='fname'id='chatinput'> -->
 <script >
    // var x;
-   var y=500.00;
-
-   var inputBox = document.getElementById('example-address-input');
-
-inputBox.onkeyup = function(){
-    document.getElementById('printchatbox').innerHTML = inputBox.value;
-    x=inputBox.value;
-    y=inputBox.value*500.00;
-    a=y-10;
-     var rest=parseInt(x);
-     // var def=parseInt(y);
-     if(rest>10 || rest<1)
-     {
-      window.alert('You can buy only upto 10 items');
-     }
-     if(rest>10 || rest<1){
-      y='a';
-     }
+   var y=500;
+   var a =490;
+   $(document).ready(function(){
+  
+  $("input").keyup(function(){
+    $("input").css("background-color", "#C0C0C0");
+     var jjj = document.getElementById("box").value;
    
-}
+    $("input").css("background-color", "#C0C0C0");
+    j=parseInt(jjj);
+    y=500*j;
+    a=y-10;
+    alert(y);
+    if(j>10 || j<0)
+    {
+      alert('You can buy only upto 10 items');
+      y='a';
+    }
+  });
+});
+
+   // var inputBox = document.getElementById('example-address-input');
+
+// inputBox.onkeyup = function(){
+    // document.getElementById('printchatbox').innerHTML = inputBox.value;
+ // function getInputValue(){
+ //            // Selecting the input element and get its value 
+ //            var jjj = document.getElementById("box").value;
+            
+ //            // Displaying the value
+ //            alert(jjj);
+ //  // var rest=parseInt(x);
+ //  y=jjj*500;
+ //  a=y-10;
+ //  // a=parseInt(a);
+ //  // y=y.toString();
+ //  // a=a.toString();
+ //  alert(y);
+ //  alert(a);
+ //        }
+        
+  // var jjj= document.getElementById("box");
+  // var x = jjj.value;
+  // rest=parseInt(x);
+  // y=rest*500;
+  // a=y-10;
+  // a=parseInt(a);
+  // y=y.toString();
+  // a=a.toString();
+  // alert(x);
+  // alert(y);
+
+
+
+     // var rest=parseInt(x);
+     // // var def=parseInt(y);
+     // if(rest>10 || rest<1)
+     // {
+     //  window.alert('You can buy only upto 10 items');
+     // }
+     // if(rest>10 || rest<1){
+     //  y='a';
+     // }
+   
+// }
+alert(x);
+  alert(y);
+  alert(a);
 
 </script>
 <script async
-  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"   >
+  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"  >
 
 </script>
 
@@ -875,17 +927,18 @@ function getGoogleTransactionInfo() {
         label: "Subtotal",
         type: "SUBTOTAL",
         price: a.toString(),
+        // price:"490",
       },
       {
         label: "Tax",
         type: "TAX",
-        price: "10.00",
+        price: "10",
       }
     ],
     countryCode: 'IN',
     currencyCode: "INR",
     totalPriceStatus: "FINAL",
-    // totalPrice:"500.00",
+    // totalPrice:"500",
     totalPrice: y.toString(),
     totalPriceLabel: "Total"
   };
