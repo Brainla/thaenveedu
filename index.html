@@ -10,6 +10,8 @@
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
    </head>
    <body>
       <style type="text/css">
@@ -296,11 +298,11 @@ font-size:15px;
          <div class="hex">
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">SERVICES</text>
                </svg>
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">JOURNEY</text>
                </svg>
@@ -308,11 +310,11 @@ font-size:15px;
          </div>
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">CONTACT</text>
                </svg>
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">BUY NOW</text>
 
@@ -333,14 +335,24 @@ font-size:15px;
                               </button>
                            </div>
                            <br><br>
+
                            <div class="modal-body text-center">
+                              <div><br><br><br></div>
+
                               <div class="form-group row">
-                                 <label for="example-address-input" class="col-2 col-form-label">Quantity</label>
+                                 <label for="example-address-input" class="col-2 col-form-label"  >Quantity</label>
+                                 <!-- <script >location.reload();</script> -->
+                                 <br><br><br><br><br>
                                  <div class="col-10">
-                                    <input class="form-control" type="number" value="1" min="1" id="example-address-input">
+                                    <input class="form-control codeText"  type="text"  value="1" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
+
+                                    <!-- onclick="window.location.reload(); -->
                                  </div>
-                              </div>
-                              <div class="form-group row">
+                              </div><!-- 
+                               <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  -->
+                             <!--  <div class="form-group row">
                                  <label for="example-number-input" class="col-2 col-form-label">Address</label>
                                  <div class="col-10">
                                     <input class="form-control" type="text" value="1" min="1" id="example-number-input">
@@ -371,18 +383,24 @@ font-size:15px;
                                  </div>
                               </div>
                            </div>
+                           
                            <div class="modal-footer">
                              
                               <p style="color:black;font-size:106%;"><strong><b>500+SHIPPING COST</b></strong>         
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+<!-- </p> -->
+<br><br>
+  <p style="color:#FFD700;font-size:136%;"><strong><b>HAPPY SHOPPING :)</b></strong>     </p>    
                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
-                              <div id="buy-now"></div>
+         <div><br><br></div>
+                              <div id="buy-now">
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
                </svg>
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">ABOUT US</text>
                   <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#about">ABOUT US</a></text>
@@ -391,12 +409,12 @@ font-size:15px;
          </div>
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">FACTS</text>
                   <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#facts">FACTS</a></text>
                </svg>
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">PRODUCTS</text>
                   <text class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">PRODUCTS</a></text>
@@ -537,13 +555,46 @@ font-size:15px;
       </section>
       <br><br><br>
    </body>
+<!-- <style >
+   .example-address-input{
+   
+    text-align: right; 
 
+}
+</style> -->
+<div id='printchatbox'></div>
 
+<!-- <input type='text' name='fname'id='chatinput'> -->
+<script >
+   // var x;
+   var y=500.00;
+   var inputBox = document.getElementById('example-address-input');
+
+inputBox.onkeyup = function(){
+    document.getElementById('printchatbox').innerHTML = inputBox.value;
+    x=inputBox.value;
+    y=inputBox.value*500.00;
+     var rest=parseInt(x);
+     // var def=parseInt(y);
+     if(rest>10 || rest<1)
+     {
+      window.alert('You can buy only upto 10 items');
+     }
+     if(rest>10 || rest<1){
+      y='a';
+     }
+   
+}
+
+</script>
 <script async
-  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"></script>
+  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"   >
+
+</script>
 
 <script>
-  
+
+
   /**
  * Define the version of the Google Pay API referenced when creating your
  * configuration
@@ -832,7 +883,8 @@ function getGoogleTransactionInfo() {
     countryCode: 'IN',
     currencyCode: "INR",
     totalPriceStatus: "FINAL",
-    totalPrice: "500.00",
+    // totalPrice:"500.00",
+    totalPrice: y.toString(),
     totalPriceLabel: "Total"
   };
 }
