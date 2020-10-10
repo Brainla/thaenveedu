@@ -344,7 +344,7 @@ font-size:15px;
                                  <!-- <script >location.reload();</script> -->
                                  <br><br><br><br><br>
                                  <div class="col-10">
-                                    <input class="form-control codeText"  type="text"  value="1" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
+                                    <input class="form-control codeText"  type="text"  value="" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
 
                                     <!-- onclick="window.location.reload(); -->
                                  </div>
@@ -568,12 +568,14 @@ font-size:15px;
 <script >
    // var x;
    var y=500.00;
+
    var inputBox = document.getElementById('example-address-input');
 
 inputBox.onkeyup = function(){
     document.getElementById('printchatbox').innerHTML = inputBox.value;
     x=inputBox.value;
     y=inputBox.value*500.00;
+    a=y-10;
      var rest=parseInt(x);
      // var def=parseInt(y);
      if(rest>10 || rest<1)
@@ -872,7 +874,7 @@ function getGoogleTransactionInfo() {
       {
         label: "Subtotal",
         type: "SUBTOTAL",
-        price: "490.00",
+        price: a.toString(),
       },
       {
         label: "Tax",
