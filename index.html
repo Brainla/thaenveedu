@@ -340,11 +340,14 @@ font-size:15px;
                               <div><br><br><br></div>
 
                               <div class="form-group row">
-                                 <label for="example-address-input" class="col-2 col-form-label"  >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
+                                 <label for="example-address-input" class="col-2 col-form-label"  >
+                                 <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantity</label>
                                  <!-- <script >location.reload();</script> -->
                                  <br><br><br><br><br>
-                                 <div class="col-8">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="box" style="text-align:center;">
+                                 <div class="col-">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input type="text" id="box" style="text-align:center;">
                                         <!-- <button type="button" onclick="getInputValue();">buy</button> -->
    
                                     <!-- <input class="form-control codeText"  type="text"  value="" min="1" id="example-address-input" onchange="myFunction()" style="text-align:center;" >
@@ -1090,5 +1093,3 @@ function processPayment(paymentData) {
   });
 }
 </script>
-
-   
