@@ -12,6 +12,7 @@
 
    </head>
    <body>
+
       <style type="text/css">
        
       	.resp
@@ -79,8 +80,16 @@
          }
          /*/Responsiveness/*/
       @media (min-width: 360px) {
+        #address
+        {
+          margin-right:-440px;
+
+        }
+
+
+
           #products{
-   height: 300vh;
+   height: 320vh;
 }
       	p{
       		font-size: 25px;
@@ -224,8 +233,11 @@ font-size:19px;
          }
       }
       @media (min-width: 992px) {
+        #address{
+          margin-right: -30px;
+        }
        #products{
-   height: 150vh;
+   height: 200vh;
 }
         #starting{
           height: 65vh;
@@ -354,7 +366,7 @@ font-size:15px;
    </style>
   
       <img src="logohoney.png"  class="center">
-
+ 
       
       <section class="container vertical-center" id="starting">
          <div class="hex">
@@ -362,8 +374,8 @@ font-size:15px;
             <div class="col justify-content-center">
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
-                <text id="font" class="font-weight-bold" x="50%" y="50%"  text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">PRODUCTS</text>
-                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">PRODUCTS</a></text>
+                <text id="font" class="font-weight-bold" x="50%" y="50%"  text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">SHOP</text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">SHOP</a></text>
                </svg>
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
@@ -383,50 +395,11 @@ font-size:15px;
                  
                </svg>
                <!-- BUYYYYYYYYYYYYY-->
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#C0C0C0" xmlns="http://www.w3.org/2000/svg">
+              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
-                  <text id="font"  class="font-weight-bold active" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">BUY NOW</text>
 
-
-                  <text class="font-weight-bold inactive" id="font" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;" data-toggle="modal" data-target="#exampleModalCenter">Click here</text>
                   <!-- Modal -->
-                  <div class="modal fade bg-black" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                     <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content bg-light text-dark">
-                           <div class="modal-header" style="background: #FFD700;">
-           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<h5 id="font" class="modal-title" id="exampleModalLongTitle" ><strong><b>BUY NOW </strong></b></h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                              </button>
-                           </div>
-                           <br><br>
-
-                           <div class="modal-body text-center">
-                              <!-- <div><br><br><br></div> -->
-
-                              <div class="form-group row">
-                                 <label for="example-address-input" id="font"  class="col-2 col-form-label"  >Quantity</label>
-                                 <br><br><br><br><br>
-                                 <div class="col-">
-                                    <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                                  QUANTITY  <input type="text" id="box" style="text-align:center;">
-   
-                                 </div>
-                              </div>
-                               
-<!-- <br><br> -->
-<br><br>
-  <p style="color:black;font-size:100%;" id="font" ><strong><b>&nbsp;&nbsp;EXCHANGE ONLY IF DAMAGED!!!
-  <br><br><p style="color: #FFD700">HAPPY SHOPPING :)</b></p></strong>     </p>    
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div></div>
-                              &nbsp;&nbsp; <div id="buy-now" >
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
+                 
                </svg>
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
@@ -507,7 +480,16 @@ font-size:15px;
             </div>
        </div> 
     </div>
-    <p style="color:  white; text-align:  justify;font-size: 35px;">The Journey of Thaenveedu includes the following steps. Deep exploring into the forest for searching the Honeycomb(Hive).Destruction process is done in a safe manner to extract. Extraction process is done safely inorder to get the delicious honey. Filtering is done inorder to remove bees from the extracted honey. The Filtered Honey is stored safely and hygienically. Delivery at your door step. Buy it and feel our Tasty Honey!!!</p><br>
+    <p style="color:  white; text-align:  justify;font-size: 35px;">
+
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Find: Deep into the forest in order of searching the honeycomb (Hive)</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px;" >Destruct: Destruction process is done in a safe manner in order to extract</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Extract: Extraction is a process done safely in order to get delicious honey</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px;">Filter: Filtering is done in order to remove the bees from honey.</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Storage: The filtered honey is stored in a safe manner</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Delivery: After ordering the pure honey is delivered to your doorstep</li>
+
+  </p><br>
 </section>
      <hr style=" border: 0;
          height: 2px;
@@ -528,11 +510,19 @@ font-size:15px;
 
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
-    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
+ 
           <!-- <br><br><br> -->
- Honey comb - 
+ <p style="color:white; text-align: center; font-size: 30px;padding: 0px;"><b ><strong>PROPERTIES</strong></b></p>
+    <p style="color:white; text-align: justify; font-size: 20px;padding: 15px;\">
+According to the United States Department of Agriculture (USDA) National Nutrient Database, one
+tablespoon of honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
+Choosing honey over refined and processed sugar may lead to long-term health benefits. Honey is
+known to have antioxidant, antimicrobial, and soothing effects.The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant
+elements clean up free radicals that are linked to diseases.
+The physical properties of honey vary depending on the specific flora used in its production, as well as
+its water content.
 
-Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, a substance created by worker bees. When the temperature is right, worker bees secrete wax scales from special glands in their body. Then they chew the wax with a bit of honey and pollen to produce the beeswax. 
+
 
 </p>
 
@@ -540,22 +530,40 @@ Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, 
 </div>
 
 <div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
+          <!-- <br><br><br> -->
+           <p style="color:white; text-align: center; font-size: 30px;top: 30px;"><b ><strong>REFINED SUGAR AND HEALTH </strong></b></p>
+
+ 
+    <p style="color:white; text-align: justify; font-size: 20px;padding: 15px;\">
+It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride,
+potassium, and magnesium.
+Below is a typical honey profile, according to Bee Source:Fructose: 38.2 percent
+Glucose: 31.3 percent
+Maltose: 7.1 percent
+Sucrose: 1.3 percent
+Water: 17.2 percent
+Higher sugars: 1.5 percent
+Ash: 0.2 percent
+Other: 3.2 percent
+The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant
+elements clean up free radicals that are linked to diseases.
+The physical properties of honey vary depending on the specific flora used in its production, as well as
+its water content.
+
+
+</p>
+</p>
+
+</div>
   <div class="col-sm-12 col-lg-6 p-5">
     
   <img src="two.png" height="500" width="500">
 </div>
 
-  <div class="col-sm-12 col-lg-6 text-success p-5">
-
-    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
-          <!-- <br><br><br> -->
- Honey comb - 
-
-Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, a substance created by worker bees. When the temperature is right, worker bees secrete wax scales from special glands in their body. Then they chew the wax with a bit of honey and pollen to produce the beeswax. 
-
-</p>
-
-</div>
+  
 </div>
 
 <div class="row container-fluid p-5">
@@ -565,35 +573,51 @@ Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, 
 </div>
 
   <div class="col-sm-12 col-lg-6 text-success p-5">
+           <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MEDICINAL USES</strong></b></p>
+    <p style="color:white; text-align: justify; font-size: 20px;margin-bottom: 13px;">
+RAW HONEY has been used to treat a wide array of illnesses, ailments, and injuries.
 
-    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
-          <!-- <br><br><br> -->
- Honey comb - 
-
-Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, a substance created by worker bees. When the temperature is right, worker bees secrete wax scales from special glands in their body. Then they chew the wax with a bit of honey and pollen to produce the beeswax. 
-
+It can be mixed with other remedies and consumed or rubbed onto the skin. Practitioners of Ayurvedic
+medicine have attempted to use honey as a remedy for the following:
+stress ,weakness ,sleep disturbance, vision problems, bad breath, teeth pain in children over a year old,
+cough and asthma, hiccups, stomach ulcers, diarrhea and dysentery, vomiting, bedwetting and frequent
+urination, high blood pressure, obesity, jaundice, hangover relief, eczema dermatitis, burns, cuts, and
+wounds arthritis , Good in digestive system &amp; appetizer, Good for bone reunion &amp; eyes , improved skin
+complexion, has Git Ulcer properties , etc .
 </p>
 
 </div>
 </div>
 
 <div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+           <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p>
+               <p style="color:white; text-align: justify; font-size:17px;margin-bottom: 13px;">
+
+It is recommended that infants under a year old do not consume honey, Honey may contain botulinum
+endospores that cause infant botulism in very young children, a rare but serious type of food poisoning
+that can result in paralysis. Even pasteurized honey has a chance of containing these spores.While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for
+thousands of years, it’s become a huge disadvantage to our population over the past century. As sugar
+processing became more advanced, and sugar became a cheap commodity, it seemed that sugar was
+added to almost every processed food in one way or another.
+As health concerns rose, we learned that high sugar consumption can be related to other health issues
+like unhealthy weight management, poor metabolic health, heart health concerns and decreased
+immune system function.1 Therefore, anyone who becomes health-conscious needs to make smart
+choices or seek other options when it comes to their consumption of refined sugar. One option is to
+minimize or eliminate processed sugars. The second option is making sure any isolated sugars consumed
+come from more natural, and nutritious sweeteners. This is where raw honey takes center stage.
+</p>
+
+</p>
+
+</div>
   <div class="col-sm-12 col-lg-6 p-5">
     
   <img src="four.png" height="500" width="500">
 </div>
 
-  <div class="col-sm-12 col-lg-6 text-success p-5">
-
-    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
-          <!-- <br><br><br> -->
- Honey comb - 
-
-Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, a substance created by worker bees. When the temperature is right, worker bees secrete wax scales from special glands in their body. Then they chew the wax with a bit of honey and pollen to produce the beeswax. 
-
-</p>
-
-</div>
+  
 </div>
       </section>
       <br>
@@ -615,8 +639,27 @@ Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, 
 </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
-    <p style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 10px  ">
-  Raw Honey can be mixed with other remedies and consumed or rubbed onto the skin. Practitioners of Ayurvedic medicine have attempted to use honey as a remedy for the following:stress , weakness , sleep disturbance ,vision problems, bad breath, teeth pain in children over a year old, cough and asthma, hiccups. , However, Raw honey has a wide range of benefits</p>
+    <!-- <p style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 10px  ">*/ -->
+ 
+
+<h2 style="color:white; text-align:center;font-size: 30px;padding:0px;margin-top: 10px  ">
+<b></strong>Online Delivery: Buy Honey Online</strong></h2></b>
+
+
+<ul>
+  <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  ">We accept online order</li>
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  "> Cash on Delivery Available</li>
+  <!-- <li></li>
+  <li>Milk</li> -->
+</ul>  
+<br><br>
+<h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
+</strong></h2>
+
+</p>
+
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Only within Chennai</li>
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Cash on Delivery Available</li>
 
 </div>
 </div>
@@ -640,15 +683,42 @@ Hi, I would like to introducabout myself , I'm HONEYCOMB &   made from beeswax, 
        
                  <p style="color:white; text-align:  justify;font-size: 30px;padding: 15px;margin-top: -100px  ">
           <br><br><br>
- Let me tell a honey story pay attention listen to me !! 
+ Let me tell a honey story pay attention listen to me!!
 
-Hi, This is Bhuvanesh( Fitness Enthusiast,Cricketer ,Entrepreneur) and  coming to the story , I would like to finish it simple . 
-Yes ,Honey plays a major role in my life because I'm  addicted to the taste of  honey in my early ages ( but I would intake it not often since there is huge demand ) & I lost the addiction towards it  for many years,  after I grew up , I thought that standard honey's are best & real  and it's been available everywhere like shops, supermarkets, etc.. I kept drinking it and I felt that it's not the one what I tasted in my early age . And, here I get to know about  differences between A RAW HONEY vs STANDARD HONEY .. then, I made a right decision of changing it to RAW HONEY .YES, I'll accept the fact that it's more nutritious, delicious !! And I myself I've been intaking RAW HONEY for the past few years and I'm feeling absolutely good & healthy & energetic .. Just a slight change , instead of sugar I changed to honey since it's natural and  has more health benefits. 
+Hi this is Bhuvanesh (Fitness Enthusiast, Cricketer, Entrepreneur) and coming to the story, I would like to
+finish it simple.
+Yes ,Honey plays a major role in my life because I&#39;m addicted to the taste of honey in my early ages (
+but I would intake it not often since there is huge demand ) &amp; I lost the addiction towards it for many
+years, after I grew up , I thought that standard honey&#39;s are best &amp; real and it&#39;s been available
+everywhere like shops, supermarkets, etc.. I kept drinking it and I felt that it&#39;s not the one what I tasted
+in my early age. And, here I get to know about differences between A RAW HONEY vs STANDARD
+HONEY. then, I made a right decision of changing it to RAW HONEY.YES, I&#39;ll accept the fact that it&#39;s more
+nutritious, delicious!! And I myself I&#39;ve been intaking RAW HONEY for the past few years and I&#39;m feeling
+absolutely good &amp; healthy &amp; energetic. Just a slight change, instead of sugar I changed to honey since
+it&#39;s natural and has more health benefits.
+<br>
+<br>
+<strong style="text-align: center;">                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Conclusion - Go For Real One! </strong>
+<br>
 
-Conclusion- Go For Real One !
-<br><br></p>
-<p style="color:white; text-align:  center;font-size: 30px;">NOTE - Life is very short nanba , always be healthy!!!</p>
-<!-- <br><br> -->
+
+<br><br>
+ThaneVeedu takes pride on selling authentic, pure, good Quality Organic products which is very good for
+our Body. No Chemicals added in our products.
+As a Customer, You get only authentic Environmental friendly Product with Utmost Quality,
+
+
+
+</p>
+<!-- <p style="color:white; text-align:  center;font-size: 30px;">NOTE - Life is very short nanba , always be healthy!!!</p>
+ --><!-- <br><br> -->
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Compatbility: Our Website is compatible with Desktop&#39;s/Mobile</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Payment Gateway: Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
+Payment Gateway(Gpay)</li>
 </div>  
       </section>
        <br><br><br><br>
@@ -658,9 +728,23 @@ Conclusion- Go For Real One !
          <br><br>
       <section class="container vertical-center" id="products" >
 <h3 class="text-center font-weight-bold" style="color:white">
-           PRODUCTS
-            <br><br>
-
+           SHOP
+            <br><br><br><br><br>
+<div class="col-">
+QUANTITY  <input type="text" id="box" style="text-align:center;">
+ </div>
+ </div>
+                               
+<!-- <br><br> -->
+<br><br>
+  <p style="color:white;font-size:100%;" id="font" ><strong><b>&nbsp;&nbsp;EXCHANGE ONLY IF DAMAGED!!!
+  <br><br><p  style="font-size:100%;color: #FFD700">HAPPY SHOPPING :)</b></p></strong>     </p>    
+                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div></div>
+                              &nbsp;&nbsp; <div id="buy-now"  >
+                              </div>
+                           </div>
+                       
          </h3> 
          <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
@@ -686,11 +770,7 @@ Glucose: 31.3 percent
 </div>
 </div>
   <div class="row container-fluid p-5">
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="eight.png" height="500" width="500">
-</div>
-  <div class="col-sm-12 col-lg-6 text-success p-5">
+    <div class="col-sm-12 col-lg-6 text-success p-5">
 
     <p style="color:white; text-align:  justify;font-size: 25px;padding: 15px;margin-top: 30px  ">Maltose: 7.1 percent
 
@@ -709,6 +789,11 @@ The slightly acidic pH level of honey is what helps prevent the growth of bacter
 The physical properties of honey vary depending on the specific flora used in its production, as well as its water content.</p>
 
 </div>
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="eight.png" height="500" width="500">
+</div>
+  
 </div>
   <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
@@ -736,11 +821,7 @@ The physical properties of honey vary depending on the specific flora used in it
 </div>
 </div>
   <div class="row container-fluid p-5">
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="7.png" height="500" width="500">
-</div>
-  <div class="col-sm-12 col-lg-6 text-success p-5">
+    <div class="col-sm-12 col-lg-6 text-success p-5">
 
     <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px ">
      According to the United States Department of Agriculture (USDA) National Nutrient Database, one tablespoon of  honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
@@ -758,7 +839,12 @@ Glucose: 31.3 percent
 </p>
 
 </div>
+
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="7.png" height="500" width="500">
 </div>
+  </div>
       </section>
      
    </body>
@@ -769,6 +855,32 @@ Glucose: 31.3 percent
 
 }
 </style> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<body>
+  <div id="WAButton"></div>
+</body> 
+
+<script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '+91 9176026892', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               // showPopup: true, //Enables popup display
+               buttonImage: '<img src="whatsapp.jpg" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script> 
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="floating-wpp.min.js"></script>
+<link rel="stylesheet" href="floating-wpp.min.css">
 <div id='printchatbox'></div>
 
 <!-- <input type='text' name='fname'id='chatinput'> -->
@@ -1283,13 +1395,17 @@ function processPayment(paymentData) {
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> -->
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
  <br><br><br> <br><br><br> <!-- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
 
  <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> -->
+<div class="row container-fluid p-5">
+    <div class="col-sm-20 col-lg-8 text-success p-5">
+
+    
+
 <footer class="text-light bg-dark" id="contact">
 
   <!-- Footer Elements -->
@@ -1302,7 +1418,7 @@ function processPayment(paymentData) {
 
       </li> -->
       <li class="list-inline-item">
-        <a href="https://wa.me/919841695764" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
+        <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
 
 <!-- <i class="fa fa-whatsapp" style="font-size:32px;color:#7FFF00"></i> -->
         </a>
@@ -1312,7 +1428,7 @@ function processPayment(paymentData) {
 
       </li> --> 
       <li class="list-inline-item">
-          <a href="https://www.instagram.com/shanmugam.baskar/" class="fa fa-instagram"></a>
+          <a href="https://www.instagram.com/thaenveedu/?igshid=4d15yiu9ibiz" class="fa fa-instagram"></a>
 
 
       </li>
@@ -1320,7 +1436,7 @@ function processPayment(paymentData) {
         <a href="#" class="fa fa-linkedin"></a>
       </li> -->
        <li class="list-inline-item">
-<a href="#" class="fa fa-google"></a>
+<a href="thaenveedu@gmail.com" class="fa fa-google"></a>
       </li>
     </ul>
     <!-- Social buttons -->
@@ -1337,11 +1453,20 @@ function processPayment(paymentData) {
 
 </footer>
 
-  </div>
-<!-- </div> -->
-<!-- Footer -->
+</div>
 
-
+  <div class="col-sm-6 col-lg-3 p-5">
+    
+ <p id="address" style="color:white; text-align: center; font-size: 20px;padding: 15px; margin-bottom:-100px">Address:
+ <br><br>
+  No.2/6, New Street,
+  <br>
+Kallikuppam, 
+<br>
+Ambattur, 
+<br>
+Chennai-53</p>
+</div>
 <style>
   body{
     background-color: black;
@@ -1380,7 +1505,9 @@ function processPayment(paymentData) {
   color: pink;
 }
 </style>
+
   </body>
+
 </html>
 
 </html>
