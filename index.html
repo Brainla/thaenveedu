@@ -14,7 +14,13 @@
    <body>
 
       <style type="text/css">
-       
+       #contact 
+       {
+       	width: 20%;
+       	position:absolute;
+       	left: -60px;
+/*bottom:0;*/
+       }
       	.resp
       	{
       		height: 160%;
@@ -22,6 +28,9 @@
       	
       	body{
       		color: red;
+      		/*width: 100%;
+      		height: 100%;
+      		padding: 0;*/
       	}
       	#serv{
       		font-color: white;
@@ -31,7 +40,12 @@
          	color:white;
 
          }
-        
+        html
+        {
+        	/*width: 100%;
+      		height: 100%;
+      		padding: 0*/;
+        }
          body{
          background: black;
          }
@@ -80,9 +94,52 @@
          }
          /*/Responsiveness/*/
       @media (min-width: 360px) {
+      	/*body 
+      	{
+      		width: 70%;
+      		padding: 0%;
+      		right: -500%;
+      	}*/
+      	#contact
+      	{
+      		width: 150%;
+       	position:absolute;
+       	left: -50px;
+      	}
+      	#ml
+      	{
+      		right: -110px;
+      		padding: 100px;
+      		padding-right: 1000px;
+      	}
+      	#buylast
+
+	{
+		font-size: 29px;
+
+}
+
          #address
         {
           color:#FFD700; text-align: center; font-size: 29px;padding: 30px;left: 100%; margin-bottom:-100px;
+        }
+        #warn
+        {
+        	height: 100px;
+        	width: 100px;
+        	right: -300px;
+        	position: relative;
+        }
+        #bot3
+        {
+        	height: 400px;
+        	width: 230px;
+        	padding: 20px;
+        	right: -30px;
+        	position: relative;
+        }
+        #bottleshop{
+        	display: flex;
         }
         #bottle
         {
@@ -90,6 +147,7 @@
           width: 20%;
           position: relative;
          left: 400px;
+         background-blend-mode: multiply;
         }
         #address
         {
@@ -100,10 +158,10 @@
 
 
           #products{
-   height: 320vh;
+   height: 60vh;
 }
       	p{
-      		font-size: 25px;
+      		font-size: 23.5px;
       	}
           .suptext{
            position:relative; left:53px; top:20px;font-size:166%;
@@ -228,7 +286,7 @@ font-size:19px;
    height: 440vh;
 }
 #about{
-   height: 90vh;
+   height: 130vh;
 }
 
        
@@ -244,12 +302,36 @@ font-size:19px;
          }
       }
       @media (min-width: 992px) {
+      		#ml
+      	{
+      		right: -290px;
+      		padding: 60px;
+      		padding-right: 1000px;
+      	}
+      	#warn
+        {
+        	height: 100px;
+        	width: 100px;
+        	right: -450px;
+        	position: relative;
+        }
+        #bot3
+        {
+        	height: 400px;
+        	width: 230px;
+        	padding: 20px;
+        	right: -170px;
+        	position: relative;
+        }
         #address
         {
           color:#FFD700; text-align: center; font-size: 20px;padding: 0px; margin-bottom:-100px
         }
         #bottle
+
+
         {
+        	background-blend-mode: multiply;
           height: 99%;
           width: 8%;
            position: relative;
@@ -259,7 +341,7 @@ font-size:19px;
           margin-right: -30px;
         }
        #products{
-   height: 200vh;
+   height: 150vh;
 }
         #starting{
           height: 65vh;
@@ -296,7 +378,7 @@ font-size:19px;
             height: 40px;
          }
          .modal-title{
-   font-size: 25px;
+   font-size: 23.5px;
       text-align: center;
 
 }
@@ -452,67 +534,26 @@ font-size:15px;
         <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <div class="container text-center p-4">
-        <h3 class=" font-weight-bold m-5" style="color:white"> JOURNEY  </h3>
-        <nav class="nav justify-content-center nav-pills flex-md-row">
-            <a class="nav-link active" href="#saa1" data-toggle="tab" style=" color: white">1. FIND</a>
-            <a class="nav-link" href="#saa2" data-toggle="tab" style=" color: white">2. DESTRUCT</a>
-            <a class="nav-link " href="#saa3" data-toggle="tab" style=" color: white">3. EXTRACT</a>
-            <a class="nav-link " href="#saa4" data-toggle="tab" style=" color: white">4. FILTER</a>
-            <a class="nav-link " href="#saa5" data-toggle="tab" style=" color: white">5. STORE</a>
-            <a class="nav-link " href="#saa6" data-toggle="tab" style=" color: white">6. DELIVER</a>
-        </nav>
-    
-       <div class="tab-content py-5 text-center">
-           <div class="shadow-lg container bg-light tab-pane rounded active col-md-4 col-sm-3 p-2 text-center" id="saa1">
-                <h4 class="card-header font-weight-bold"  style="color: black;">FIND</h4>
-                <div class="d-flex align-items-center p-2" style="height: 150px">
-                    <p style="color: black;font-size: 21px;" >DEEP INTO THE FOREST FOR SEARCHING THE HONEYCOMB (HIVE)</p>
-                </div>
-            </div>
-           <div class="shadow-lg container bg-light tab-pane rounded  col-md-4 col-sm-3 p-2 text-center" id="saa2" >
-               <h4  class="card-header font-weight-bold" style="color: black;">DESTRUCT</h4>
-               <div class="d-flex align-items-center p-2" style="height: 150px">
-                <p style="color: black;font-size: 21px;">DESTRUCTION PROCESS IS DONE IN A SAFE MANNER INORDER TO EXTRACT </p>
-               </div>
-            </div>
-            <div class="shadow container bg-light tab-pane rounded  col-md-4 col-sm-3 p-2 text-center " id="saa3">
-                <h4 class="card-header font-weight-bold"  style="color: black;">EXTRACT</h4>
-                <div class="d-flex align-items-center p-2" style="height: 150px">
-                    <p style="color: black;font-size: 21px;">EXTRACTION PROCESS IS DONE SAFELY INORDER TO GET THE DELICIOUS HONEY. </p>
-                </div>
-            </div>
-            <div class="shadow container bg-light tab-pane rounded  col-md-4 col-sm-3 p-2 text-center" id="saa4">
-                <h4  class="card-header font-weight-bold"  style="color: black;" >FILTER</h4>
-                <div class="d-flex align-items-center p-2" style="height: 150px">
-                    <p style="color: black;font-size: 21px;" >FILTERING IS DONE IN ORDER TO REMOVE BEES FROM THE EXTRACTED HONEY.
-                </div>
-            </div>
-            <div class="shadow container bg-light tab-pane rounded  col-md-4 col-sm-3 p-2 text-center" id="saa5">
-                <h4  class="card-header font-weight-bold"  style="color: black;">STORE</h4>
-                <div class="d-flex align-items-center p-2" style="height: 150px">
-                    <p style="color: black;font-size: 21px;">THE FILTERED HONEY IS STORED SAFELY AND HYGIENICALLY.</p>
-                </div>
-            </div>
-            <div class="shadow container bg-light tab-pane rounded  col-md-4 col-sm-3 p-2 text-center " id="saa6">
-                <h4  class="card-header font-weight-bold"  style="color: black;" >DELIVER</h4>
-                <div class="d-flex align-items-center p-2" style="height: 150px">
-                    <p style="color: black;font-size: 21px;" >DELIVERY AT YOUR DOOR STEP. BUY IT & FEEL OUR TASTY HONEY!!!</p>
-                </div>
-            </div>
-       </div> 
-    </div>
+<h3 class="text-center font-weight-bold"  style="color:  white">JOURNEY</h3>
+
+<div class="row container-fluid p-5">
+	<div class="col-sm-12 col-lg-6 p-5">
+	
     <p style="color:  white; text-align:  justify;font-size: 35px;">
 
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Find: Deep into the forest in order of searching the honeycomb (Hive)</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px;" >Destruct: Destruction process is done in a safe manner in order to extract</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Extract: Extraction is a process done safely in order to get delicious honey</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px;">Filter: Filtering is done in order to remove the bees from honey.</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Storage: The filtered honey is stored in a safe manner</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; ">Delivery: After ordering the pure honey is delivered to your doorstep</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;" >Find: Deep into the forest in order of searching the honeycomb (Hive)</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;" >Destruct: Destruction process is done in a safe manner in order to extract</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Extract: Extraction is a process done safely in order to get delicious honey</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;">Filter: Filtering is done in order to remove the bees from honey.</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Storage: The filtered honey is stored in a safe manner</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Delivery: After ordering the pure honey is delivered to your doorstep</li>
 
   </p><br>
+  </div>
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+		<img src="five.png">
+	</div>
+</div>
 </section>
      <hr style=" border: 0;
          height: 2px;
@@ -526,7 +567,7 @@ font-size:15px;
 
          </h3>
  <nav class="nav justify-content-center nav-pills flex-md-row">
-           <strong style="font-size: 20px"> <a class="nav-link active" href="#prop"  style=" color: white">PROPERTIES</a></strong>
+           <strong style="font-size: 20px"> <a class="nav-link " href="#prop"  style=" color: white">PROPERTIES</a></strong>
     <strong style="font-size: 20px">        <a class="nav-link" href="#ref"  style=" color: white">REFINED SUGAR AND HEALTH</a></strong>
     <strong style="font-size: 20px">        <a class="nav-link " href="#med"  style=" color: white">MEDICINAL USES</a></strong>
     <strong style="font-size: 20px">        <a class="nav-link " href="#must" style=" color: white">MUST NOT DO</a></strong>
@@ -536,7 +577,7 @@ font-size:15px;
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
     
-  <img src="one.png" height="500" width="500">
+  <img src="10.png" height="500" width="500">
 </div>
 
   <div class="col-sm-12 col-lg-6 text-success p-5">
@@ -592,7 +633,7 @@ its water content.
 
   <div class="col-sm-12 col-lg-6 p-5">
     
-  <img src="two.png" height="500" width="500">
+  <img src="prop.png" height="500" width="500">
 </div>
 
   
@@ -603,7 +644,7 @@ its water content.
   <div class="col-sm-12 col-lg-6 p-5">
                <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MEDICINAL USES</strong></b></p>
 
-  <img src="three.png" height="500" width="500">
+  <img src="ref.png" height="500" width="500">
 </div>
 
   <div class="col-sm-12 col-lg-6 text-success p-5">
@@ -651,13 +692,13 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 </div>
   <div class="col-sm-12 col-lg-6 p-5">
 <br><br>
-  <img src="four.png" height="500" width="500">
+  <img src="11.png" height="500" width="500">
 </div>
 
   
 </div>
 </section>
-      </section>
+      
       <br>
       <hr style=" border: 0;
          height: 2px;
@@ -673,12 +714,12 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
         <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
     
-  <img src="five.png" height="500" width="500">
+  <img src="eight.png" height="500" width="500">
 </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
-    <!-- <p style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 10px  ">*/ -->
  
+<br><br><br><br><br>
 
 <h2 style="color:white; text-align:center;font-size: 30px;padding:0px;margin-top: 10px  ">
 <b></strong>Online Delivery: Buy Honey Online</strong></h2></b>
@@ -687,11 +728,25 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 <ul>
   <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  ">We accept online order</li>
 <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  "> Cash on Delivery Available</li>
-  <!-- <li></li>
-  <li>Milk</li> -->
+
 </ul>  
 <br><br>
-<h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
+<!-- <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
+</strong></h2>
+
+</p>
+
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Only within Chennai</li>
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Cash on Delivery Available</li> -->
+
+</div>
+</div>
+
+<div class="row container-fluid p-5">
+	<div class="col-sm-12 col-lg-6 p-5">
+		<br><br><br><br><br>
+<br>
+		<h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
 </strong></h2>
 
 </p>
@@ -699,10 +754,11 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Only within Chennai</li>
 <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Cash on Delivery Available</li>
 
+	</div>
+	<div class="col-sm-12 col-lg-6 text-success p-5">
+		<img src="10.png">
+	</div>
 </div>
-</div>
-
-
       </section>
 
       <br><br><br>
@@ -713,13 +769,13 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
          <br><br>
          <!-- <h3>ABOUT US</h3> -->
-      <section class="container vertical-center" id="about us" >
+      <section class="container vertical-center" id="about" >
 <h3 class="text-center font-weight-bold"  style="color:  white">ABOUT US</h3>
        <div class="row container-fluid p-5">
         <div class="col-sm-12 col-lg-6 text-success p-5">
 
-    <!-- <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px  "> -->
-                    <p style="color:white; text-align:  justify;font-size: 25px;padding: 15px;margin-top: 20px  ">
+    <!-- <p style="color:white; text-align:  justify;font-size: 23.5px;padding: 15px;margin-top: 0px  "> -->
+                    <p style="color:white; text-align:  justify;font-size: 23.5px;padding: 15px;margin-top: 20px  ">
  Let me tell a honey story pay attention listen to me!!
 
 Hi this is Bhuvanesh (Fitness Enthusiast, Cricketer, Entrepreneur) and coming to the story, I would like to
@@ -752,7 +808,7 @@ everywhere like shops, supermarkets, etc..
         
    
 <!-- <p style="color:white; text-align:  center;font-size: 30px;">NOTE - Life is very short nanba , always be healthy!!!</p>
- --><!-- <br><br> --><p>I kept drinking it and I felt that it&#39;s not the one what I tasted
+ --><!-- <br><br> --><p style="text-align: justify;">I kept drinking it and I felt that it&#39;s not the one what I tasted
 in my early age. And, here I get to know about differences between A RAW HONEY vs STANDARD
 HONEY. then, I made a right decision of changing it to RAW HONEY.YES, I&#39;ll accept the fact that it&#39;s more
 nutritious, delicious!! And I myself I&#39;ve been intaking RAW HONEY for the past few years and I&#39;m feeling
@@ -762,145 +818,52 @@ our Body. No Chemicals added in our products.
 As a Customer, You get only authentic Environmental friendly Product with Utmost Quality,
 
 </p>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Compatbility: Our Website is compatible with Desktop&#39;s/Mobile</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >Payment Gateway: Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b>Compatbility&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: </b>Our Website is compatible with Desktop&#39;s/Mobile</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b>Payment Gateway&nbsp;&nbsp;:</b> Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
 Payment Gateway(Gpay)</li>
 </div>  
       </section>
+            <br><br><br><br> <br><br><br><br><br>      <br><br><br><br><br>      <br><br><br><br><br>      <br><br><br><br><br>
        <br><br><br><br>
       <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
          <br><br>
       <section class="container vertical-center" id="products" >
-<h3 class="text-center font-weight-bold" style="color:white">
-           SHOP
-            <br><br><br><br><br>
-<div class="col-">
-QUANTITY  <input type="text" id="box" style="text-align:center;">
- </div>
- </div>
-                               
-<!-- <br><br> -->
+
+<h3 class="text-center font-weight-bold"  style="color:  white">SHOP</h3>
+
+
 <br><br>
-  <p style="color:white;font-size:100%;" id="font" ><strong><b>&nbsp;&nbsp;EXCHANGE ONLY IF DAMAGED!!!
-  <br><br><p  style="font-size:100%;color: #FFD700">HAPPY SHOPPING :)</b></p></strong>     </p>    
-                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-         <div></div>
-                              &nbsp;&nbsp; <div id="buy-now"  >
-                              </div>
-                           </div>
-                       
-         </h3> 
-         <div class="row container-fluid p-5">
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="11.png" height="500" width="500">
-</div>
-  <div class="col-sm-12 col-lg-6 text-success p-5">
+         <div id="bottleshop" width="25px" height="250px">
+<img  id="bot3"  src="bottle.png"  width="25%" height="250px">
+<img id="bot3" src="bottle.png">
+<img id="bot3" src="bottle.png">
 
-    <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px  ">
-      According to the United States Department of Agriculture (USDA) National Nutrient Database, one tablespoon of  honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
 
-Choosing honey over refined and processed sugar may lead to long-term health benefits. Honey is known to have antioxidant, antimicrobial, and soothing effects.
+<!-- <button type="button" class="btn btn-warning">Warning</button>
+ -->
+<br><br><br>
+</div> 
+<!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ --><br><br><br>
+<div id="ml" style="display: flex;position: relative;">
+<h3 class="text-center font-weight-bold"  style="color:  white">100ml</h3>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride, potassium, and magnesium.
+<h3 class="text-center font-weight-bold"  style="color:  white">250ml</h3>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-Below is a typical honey profile, according to BeeSource:
+<h3 class="text-center font-weight-bold"  style="color:  white">500ml</h3>
 
-Fructose: 38.2 percent
-
-Glucose: 31.3 percent
-    </p>
 
 </div>
+<button type="button" id="warn" class="btn btn-warning" style="width: 145px;"><strong><b style="font-color:black" id ="buylast">BUY <br>
+  NOW</b></strong></button>
+
+
+</section>
 </div>
-  <div class="row container-fluid p-5">
-    <div class="col-sm-12 col-lg-6 text-success p-5">
-
-    <p style="color:white; text-align:  justify;font-size: 25px;padding: 15px;margin-top: 30px  ">Maltose: 7.1 percent
-
-Sucrose: 1.3 percent
-
-Water: 17.2 percent
-
-Higher sugars: 1.5 percent
-
-Ash: 0.2 percent
-
-Other: 3.2 percent
-
-The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant elements clean up free radicals that are linked to diseases.
-
-The physical properties of honey vary depending on the specific flora used in its production, as well as its water content.</p>
-
-</div>
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="eight.png" height="500" width="500">
-</div>
-  
-</div>
-  <div class="row container-fluid p-5">
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="10.png" height="500" width="500">
-</div>
-  <div class="col-sm-12 col-lg-6 text-success p-5">
-
-    <p style="color:white; text-align:  justify;font-size: 25px;padding: 15px;margin-top: 30px ">Maltose: 7.1 percent
-
-Sucrose: 1.3 percent
-
-Water: 17.2 percent
-
-Higher sugars: 1.5 percent
-
-Ash: 0.2 percent
-
-Other: 3.2 percent
-
-The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant elements clean up free radicals that are linked to diseases.
-
-The physical properties of honey vary depending on the specific flora used in its production, as well as its water content.</p>
-
-</div>
-</div>
-  <div class="row container-fluid p-5">
-    <div class="col-sm-12 col-lg-6 text-success p-5">
-
-    <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px ">
-     According to the United States Department of Agriculture (USDA) National Nutrient Database, one tablespoon of  honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
-
-Choosing honey over refined and processed sugar may lead to long-term health benefits. Honey is known to have antioxidant, antimicrobial, and soothing effects.
-
-It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride, potassium, and magnesium.
-
-Below is a typical honey profile, according to BeeSource:
-
-Fructose: 38.2 percent
-
-Glucose: 31.3 percent
-
-</p>
-
-</div>
-
-  <div class="col-sm-12 col-lg-6 p-5">
-    
-  <img src="7.png" height="500" width="500">
-</div>
-  </div>
-      </section>
-     
-   </body>
-<!-- <style >
-   .example-address-input{
-   
-    text-align: right; 
-
-}
-</style> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <!--Floating WhatsApp css-->
 <link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
@@ -1424,38 +1387,19 @@ function processPayment(paymentData) {
 </style>
 
 
-  <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+  
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <!-- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> --> 
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br><br><br><br><br><<!-- br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> -->
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <!-- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br>
+ 
+    <br><br><br><br>
 
- <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> <br><br><br> -->
-<div class="row container-fluid p-5">
-    <div class="col-sm-20 col-lg-8 text-success p-5">
-
-    
-
-<footer class="text-light bg-dark" id="contact">
+<footer class="text-light bg-dark" id="contact" width="500%">
 
   <!-- Footer Elements -->
-  <div class="container">
+  <!-- <div class="container"> -->
 
     <!-- Social buttons -->
     <ul class="list-unstyled list-inline text-center">
@@ -1492,16 +1436,24 @@ function processPayment(paymentData) {
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">©️ 2020 Terms & Conditions: Exchange only if damaged<br>
+  	<p id="address" >Address:
+ 
+  No.2/6, New Street,
+ 
+Kallikuppam, 
+Ambattur, 
+Chennai-53</p>
+<br><br><br><br><br>
     <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
-  </div>
+  <!-- </div> -->
   <!-- https://brainla.github.io/thaenveedu/ -->
   <!-- Copyright -->
 
 </footer>
 
-</div>
+<!-- </div> -->
 
-  <div class="col-sm-6 col-lg-3 p-5">
+ <!--  <div class="col-sm-6 col-lg-3 p-5">
     
  <p id="address" >Address:
  <br><br>
@@ -1512,7 +1464,7 @@ Kallikuppam,
 Ambattur, 
 <br>
 Chennai-53</p>
-</div>
+</div> -->
 <style>
   body{
     background-color: black;
@@ -1556,4 +1508,4 @@ Chennai-53</p>
 
 </html>
 
-</html>
+
