@@ -13,16 +13,7 @@
    </head>
    <body>
  <style type="text/css">
-       /*#contact 
-       {
-        width: 20%;
-        position:absolute;
-        left: -60px;
-       }*/
-        /*.resp
-        {
-          height: 160%;
-        }*/
+      
         
         body{
           overflow-x: hidden;
@@ -62,8 +53,6 @@
          section{
             vertical-align: middle;
          }
-               
-        
          
          .btn:hover{
          scale: 1.1;
@@ -182,15 +171,11 @@
           height: 300px;
           width: 250px;
         }
-        .bott1
-        {
-          height: 250px;
-          width: 200px;
-        }
-        #bottleshop{
-          display: flex;
+        /*#bottleshop img{
+        vertical-align:top;
+        border:0;
+        }*/
 
-        }
         #bottle
         { 
           top:-30px;
@@ -210,7 +195,7 @@
 
 
           #products{
-   height: 40vh;
+   height: 90vh;
 }
         p{
           font-size: 23.5px;
@@ -358,8 +343,28 @@ font-size:19px;
             width: 5rem;
             height: 5rem;
          }
+         .bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
+      }
+      @media (min-width: 768px) {
+        .bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
       }
       @media (min-width: 992px) {
+      	.bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
       		#tex100ml
       	{
       		right: 390px;
@@ -442,7 +447,7 @@ font-size:19px;
         .bott3
         {
           height: 350px;
-          width: 280px;
+          width: 300px;
         }
         .bott2
         {
@@ -453,6 +458,7 @@ font-size:19px;
         {
           height: 250px;
           width: 200px;
+          /*margin: 0 auto;*/
         }
         #address
         {
@@ -967,30 +973,34 @@ Payment Gateway(Gpay)</li>
          <br><br>
       <section class="container vertical-center" id="products" >
 <h3 class="text-center font-weight-bold" style="color:white">
-           SHOP
+           SHOP</h3>
 
-           <br><br>
+           <br><br><br>
 
-         <div id="bottleshop" class="row text-center">
-  <div class="col"><img class="bott1" style="margin-top: 100px;" src="bottle.png">
-    <figcaption  class="figure-caption text-center">100ml</figcaption>
-  </div>
-  <div class="col"><img class="bott2" style="margin-top: 50px;" src="bottle.png"  >
-    <figcaption style="font-color:white" class="figure-caption text-center">250ml</figcaption>
-  </div> 
-  <div class="col"><img class="bott3" style="margin-top: 0;" src="bottle.png"  >
-    <figcaption style="font-color:white"class="figure-caption text-center">500ml</figcaption>
-  </div>
+<div id="bottleshop" class="row text-center">
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott1" style="margin-top: 100px;" src="bottle.png">
+		<figcaption class="figure-caption text-center">100ml</figcaption>
+	</div>
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott2" style="margin-top: 50px;" src="bottle.png"  >
+	 	<figcaption class="figure-caption text-center">250ml</figcaption>
+	</div> 
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott3" style="margin-top: 0;" src="bottle.png"  >
+		<figcaption class="figure-caption text-center">500ml</figcaption>
+	</div>
 <br><br><br>
-</div>
-</h3>
+</div> 
+            
+     <!-- <div id="ml" style="display: flex;position: relative;"> -->
+
+
 <!-- <button type="button" id="warn" class="btn btn-warning" style="width: 145px;"><strong><b style="font-color:black" id ="buylast">BUY <br>
   NOW</b></strong></button> -->
 <br><br><br>
+<div >
  <button class="btn btn-warning"  data-toggle="modal" id ="warning" data-target="#exampleModalCenter" >
-    <b>  <strong  id ="buylast"style="width: 145px; color: black"  >BUY NOW</strong></b>
-         </button>
-    
+    <b>  <strong  id ="buylast"style="color: black"  >BUY NOW</strong></b>
+  </button>
+</div>    
       <div class="modal fade bg-secondary" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content bg-light text-dark">
@@ -1034,6 +1044,47 @@ Payment Gateway(Gpay)</li>
 
 </h3>
 </section>
+<footer class="text-light bg-dark sticky-bottom" id="contact">
+
+  
+  <div class="container">
+
+    
+    <ul class="list-unstyled list-inline text-center">
+
+      <li class="list-inline-item">
+        <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
+
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+          <a href="https://www.instagram.com/thaenveedu/?igshid=4d15yiu9ibiz" class="fa fa-instagram"></a>
+
+
+      </li>
+
+       <li class="list-inline-item">
+<a href="thaenveedu@gmail.com" class="fa fa-google"></a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="footer-copyright text-center py-3">©️ 2020 Terms & Conditions: Exchange only if damaged<br>
+    <p  >Address:
+ 
+  No.2/6, New Street,
+ 
+Kallikuppam, 
+Ambattur, 
+Chennai-53</p>
+
+    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
+
+  </div>
+
+</footer>
    </body>
 <!-- <style >
    .example-address-input{
@@ -1565,10 +1616,7 @@ function processPayment(paymentData) {
 </style>
 
 
-  <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
+
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
     <!-- Bootstrap CSS -->
@@ -1577,48 +1625,35 @@ function processPayment(paymentData) {
 
 <!-- <div class="row container-fluid p-5">
     <div class="col-sm-20 col-lg-8 text-success p-5"> -->
+ 
 
-    
+<!-- <footer class="text-light bg-dark sticky-bottom" id="contact">
 
-<footer class="text-light bg-dark" id="contact">
-
-  <!-- Footer Elements -->
+  
   <div class="container">
 
-    <!-- Social buttons -->
+    
     <ul class="list-unstyled list-inline text-center">
-      <!-- <li class="list-inline-item">
-        <a href="#" class="fa fa-facebook"></a>
 
-      </li> -->
       <li class="list-inline-item">
         <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
 
-<!-- <i class="fa fa-whatsapp" style="font-size:32px;color:#7FFF00"></i> -->
         </a>
       </li>
-      <!--  <li class="list-inline-item"> -->
-         <!--  <a href="#" class="instagram"><i class="fa fa-instagramr"></i></a>
 
-      </li> --> 
       <li class="list-inline-item">
           <a href="https://www.instagram.com/thaenveedu/?igshid=4d15yiu9ibiz" class="fa fa-instagram"></a>
 
 
       </li>
-     <!--  <li class="list-inline-item">
-        <a href="#" class="fa fa-linkedin"></a>
-      </li> -->
+
        <li class="list-inline-item">
 <a href="thaenveedu@gmail.com" class="fa fa-google"></a>
       </li>
     </ul>
-    <!-- Social buttons -->
 
   </div>
-  <!-- Footer Elements -->
 
-  <!-- Copyright -->
   <div class="footer-copyright text-center py-3">©️ 2020 Terms & Conditions: Exchange only if damaged<br>
     <p  >Address:
  
@@ -1627,15 +1662,13 @@ function processPayment(paymentData) {
 Kallikuppam, 
 Ambattur, 
 Chennai-53</p>
-<!-- <br><br><br><br><br> -->
-    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
-    <!-- <br><br><br><br><br> -->
-  </div>
-  <!-- https://brainla.github.io/thaenveedu/ -->
-  <!-- Copyright -->
 
-</footer>
-<!-- <br><br>br -->
+    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
+
+  </div>
+
+</footer> -->
+
 </div>
 
   
@@ -1678,8 +1711,7 @@ Chennai-53</p>
 }
 </style>
 
-  </body>
 
-</html>
+
 
 </html>
