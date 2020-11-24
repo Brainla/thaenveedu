@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,400,400italic,700,700italic|Hind:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+     >
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+      <title>Thaenveedu</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+   </head>
+   <body>
+ <style type="text/css">
+      
+        
+        body{
+          overflow-x: hidden;
+          color: red;
+        
+        }
+        #serv{
+          font-color: white;
+        }
+         h3,h4,#font,p{
+          font-family: Hind;
+          color:white;
+
+         }
+        html
+        {
+          /*width: 100%;
+          height: 100%;
+          padding: 0*/;
+        }
+         body{
+         background: black;
+         }
+         body .active{
+         display: block;
+         }
+         body .inactive{
+         display: none;
+         }
+         h3{
+         color:white;
+
+         }
+         h4{
+         color:white;
+         }
+         section{
+            vertical-align: middle;
+         }
+         
+         .btn:hover{
+         scale: 1.1;
+         transition-duration: 0.1s;
+         }
+         .bi-hexagon:hover {
+          scale: 1.015;
+         }
+         .btn.special:hover{
+         scale: 1.0;
+         /*/transition-duration: 0.1s;/*/
+         }
+       
+         .bi-hexagon:hover .active{
+         display: none;
+         }
+         .bi-hexagon:hover .inactive{
+         display: block;
+         }
+         .carousel-inner img {
+         margin: auto;
+         }
+         .carousel-inner > .item > img {
+           margin: 0 auto;
+         }
+         /*/Responsiveness/*/
+      @media (min-width: 360px) {
+
+      	#tex100ml
+      	{
+      		right: 380px;
+      		position: absolute;
+      	}
+      	#tex200ml
+      	{
+      		right: 150px;
+      		position: absolute;
+      	}
+      	#tex300ml
+      	{
+      		right: -100px;
+      		position: absolute;
+      	}
+      	/*#buylast
+      	{
+      		right: -120px;
+      		position: absolute;
+      	}*/
+        #warning
+        {
+          position: relative;
+          bottom: -30px;
+          right: -300px;
+
+        }
+
+          #mltext
+        {
+          right: 290px;
+         /* padding: 100px;
+          padding-right: 10px;*/
+          position: absolute;
+        }  
+       
+        #reftext
+        {
+          position: absolute;
+          right: -458px;
+        }
+        #proptex
+        {
+          right:105px;position: absolute;
+        }
+         
+        #ml
+        {
+          right: -110px;
+          padding: 100px;
+          padding-right: 1000px;
+        }  
+      
+         #address
+        {
+          color:#FFD700; text-align: center; font-size: 29px;padding: 30px;left: 100%; margin-bottom:-100px;
+        }
+        #warn
+        {
+          height: 60px;
+          width: 170px;
+          right: -300px;
+          position: relative;
+        }
+        #botmodal
+        {  height: 350px;
+          width: 280px;
+        	padding: 50px;
+        	bottom: -50px;
+          right: 92px;
+          position: relative;
+        }
+        #bot3
+        {
+          /*height: 400px;
+          width: 230px;*/
+          padding: 50px;
+          right: -20px;
+          position: relative;
+        }
+        .bott3
+        {
+          height: 350px;
+          width: 280px;
+        }
+        .bott2
+        {
+          height: 300px;
+          width: 250px;
+        }
+        /*#bottleshop img{
+        vertical-align:top;
+        border:0;
+        }*/
+
+        #bottle
+        { 
+          top:-30px;
+
+          height: 99%;
+          width: 20%;
+          position: relative;
+         left: 400px;
+         background-blend-mode: multiply;
+        }
+        #address
+        {
+          margin-right:-440px;
+
+        }
+
+
+
+          #products{
+   height: 120vh;
+}
+        p{
+          font-size: 23.5px;
+        }
+          .suptext{
+           position:relative; left:53px; top:20px;font-size:166%;
+         }
+          .suim{
+           position:absolute; 
+           right:423px;
+         }
+         #wh{
+            position: relative;
+            left: 100px;
+         }
+           .intext{
+            position:relative; left:-83px; top:24px;font-size:166%;
+         }
+          .whtext
+         {
+            position:relative; 
+            left:-213px; 
+            top:30px;
+            font-size:166%;
+         }
+         .form-group{
+            height: 77px;
+         }
+         
+         .close{
+            font-size: 50px;
+
+         }
+         .modal-title{
+          right: -140px;
+          position: relative;
+   font-size: 37px;
+   text-align: center;
+}
+/*.modal-title{
+   font-size: 37px;
+   text-align: center;
+}
+.modal-header{
+   height: 90px;
+}
+.modal-body {
+height:550px;
+font-size:19px;
+}*/
+.form-control
+{
+   height: 20px;
+   padding: 20px;
+}
+.example-mobile-input{
+   padding: 85px;
+}
+       h3
+         {
+
+            font-size: 57px;
+         }  
+
+
+
+         #insta{
+
+   
+   width: 55px;
+   height: 62px;
+   align-items: center;
+}
+#insta{
+   position: relative;
+   margin-right: 130px;
+   height: 115px;
+   width: 105px;
+}
+#wh{
+   height: 100px;
+   width: 95px;
+}
+         .social{
+            position: relative;
+            bottom: -100px;
+            display: flex;
+            margin-left: 161px;
+            margin-bottom: 58px;
+
+
+         }
+         .whats{
+           margin-bottom: 50%;
+            align-items: center;
+            display: flex;
+            float: center;
+         
+
+         }
+         img{
+            width: 100%;
+            height: 60vh;
+         }
+         svg{
+            width: 12.5rem;
+            height: 15rem;
+         }
+         .responsive{
+            margin-bottom: 30px;
+            height: 150vh;
+
+         }
+          .center {
+                  display: block;
+  margin-left:auto;
+  margin-right:auto;
+   position: relative; 
+     width: 400px;
+
+
+
+            height: 445px;
+
+}
+.hex{
+   height: 50vh;
+   }      
+
+#facts{
+   height: 440vh;
+}
+#about{
+   height: 130vh;
+}
+
+       
+      }
+      @media (max-width: 768px) {
+         img{
+            width: 240px;
+            height: 160px;
+         }
+         svg{
+            width: 5rem;
+            height: 5rem;
+         }
+         .bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
+      }
+      @media (min-width: 768px) {
+        .bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
+      }
+      @media (min-width: 992px) {
+      	.bott3,.bott2,.bott1
+        {
+          height: 350px;
+          width: 280px;
+          margin: 0 auto;
+        }
+      		#tex100ml
+      	{
+      		right: 390px;
+      		position: absolute;
+      	}
+      	#tex200ml
+      	{
+      		right: 170px;
+      		position: absolute;
+      	}
+      	#tex300ml
+      	{
+      		right: -100px;
+      		position: absolute;
+      	}
+      	  #warning
+        {
+          position: relative;
+          bottom: -30px;
+          right: -470px;
+          
+        }
+
+      	#proptex
+      	{position: relative;
+      			right: 20px;
+      	}
+
+      	 #reftext
+        {
+          position: relative;
+          right: 0px;
+        }
+      	#botmodal
+        {
+        	padding: 50px;
+        	bottom: -50px;
+          right: 95px;
+          position: relative;
+        }
+          #mltext
+        {
+          right: 490px;
+          /*padding: 100px;*/
+          /*padding-right: 100px;*/
+          position: absolute;
+        }  
+        html,body {
+    margin:0;
+    padding:0;
+}
+       /* body 
+        {
+          right: 200%;
+          width: 101%;
+          zoom:96%;
+          
+        }*/
+          #ml
+        {
+          right: -290px;
+          padding: 60px;
+          padding-right: 1000px;
+        }
+        #warn
+        {
+          height: 70px;
+          width: 160px;
+          right: -450px;
+          position: relative;
+        }
+        #bot3
+        {
+          /*height: 400px;
+          width: 230px;*/
+          padding: 50px;
+          right: -190px;
+          position: relative;
+        }
+        .bott3
+        {
+          height: 350px;
+          width: 300px;
+        }
+        .bott2
+        {
+          height: 300px;
+          width: 250px;
+        }
+        .bott1
+        {
+          height: 250px;
+          width: 200px;
+          /*margin: 0 auto;*/
+        }
+        #address
+        {
+          color:#FFD700; text-align: center; font-size: 20px;padding: 0px; margin-bottom:-100px
+        }
+        #bottle
+
+
+        {
+        	 top:-10px;
+          background-blend-mode: multiply;
+          height: 99%;
+          width: 8%;
+           position: relative;
+         left: 630px;
+        }
+        #address{
+          margin-right: -30px;
+        }
+       #products{
+   height: 100vh;
+}
+        #starting{
+          height: 65vh;
+        }
+         .suim{
+           position:relative; left:-23px;
+         }
+         .suptext{
+           position:relative; left:23px; top:10px;font-size:146%;
+         }
+         .intext{
+            position:relative; left:-103px; top:10px;font-size:146%;
+         }
+         .whtext
+         {
+            position:relative; 
+            left:-193px; 
+            top:14px;
+            font-size:146%;
+         }
+          #wh{
+            position: relative;
+            left: -10px;
+            top:0px;
+         }
+         #contmod{
+            width: 260px;
+         }
+           .close{
+            font-size: 20px;
+
+         }
+         .modal-title{
+   font-size: 23.5px;
+      text-align: center;
+
+}
+          .form-group{
+            height: 40px;
+         }
+        /* .modal-title{
+   font-size: 23.5px;
+      text-align: center;
+
+}
+.modal-header{
+   height: 60px;
+}
+.modal-body {
+height:350px;
+font-size:15px;
+}*/
+.form-control
+{
+   height: 38px;
+   padding: 0px;
+}
+.example-mobile-input{
+   padding: 0px;
+}
+         img{
+            width: 400px;
+            height: 550px;
+         }
+         svg{
+            width: 8rem;
+            height: 8rem;
+         }
+
+         .center {
+                  display: block;
+  margin-left:auto;
+  margin-right:auto;
+   position: relative; 
+     width: 300px;
+            height: 300px;
+
+}
+   .social{
+   display: flex;
+   position: absolute;
+  width: 30px;
+  height: 20px;
+  z-index: 15;
+  /*/top: 20%;/*/
+  left: 50%;
+  margin: -100px 0 0 -150px;
+
+}
+
+
+.hex{
+   height: 100vh;
+   }      
+
+#facts{
+   height:550vh;
+}
+#about{
+   height: 120vh;
+}
+
+#insta{
+
+
+   width: 57px;
+   height: 59px;
+   align-items: center;
+}
+#wh{
+   bottom: -5px;
+   height: 54px;
+   width: 48px;
+}
+ h3
+         {
+
+            font-size: 30px;
+         }  
+             
+
+}
+
+.h4{
+  font-color: black;
+}
+.h3{
+  font-color: black;
+}
+
+   </style>
+  
+      <img src="logohoney.png"  class="center">
+ 
+      
+      <section class="container vertical-center" id="starting">
+         <div class="hex">
+         <div class="row align-items-center text-center">
+            <div class="col justify-content-center">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                <text id="font" class="font-weight-bold" x="50%" y="50%"  text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">SHOP</text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">SHOP</a></text>
+               </svg>
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                  <text id="font" class="font-weight-bold " id="serv" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;font-color:white">SERVICES</text>
+                   <text  id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="white" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#services">SERVICES</a></text>
+                   
+               </svg>
+            </div>
+         </div>
+         <div class="row align-items-center text-center">
+            <div class="col justify-content-center">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                   <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">CONTACT</text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#contact">CONTACT</a></text>
+                  <!-- Modal -->
+                 
+               </svg>
+               <!-- BUYYYYYYYYYYYYY-->
+              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg"></svg>
+                 <!--  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/> -->
+<a href="#products">       
+  <img  src="drop.jpeg" id="bottle"  alt="honeybottle"style="position: absolute;margin-left: -105px;margin-top: -2px"></a>
+ 
+                 
+               
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                  <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">FACTS</text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#facts">FACTS</a></text>
+               </svg>
+            </div>
+         </div>
+         <div class="row align-items-center text-center">
+            <div class="col justify-content-center">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                   <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">ABOUT US </text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#about us">ABOUT US </a></text>
+               </svg>
+                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
+                   <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">JOURNEY </text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#journey">JOURNEY </a></text>
+               </svg>
+            </div>
+         </div>
+         </div>
+      
+      </section>
+            <section class="container vertical-center" id="journey" >
+        <hr style=" border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, #000, #FFD700, #000);">
+<h3 class="text-center font-weight-bold"  style="color:  gold">JOURNEY</h3>
+
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 p-5">
+  
+    <p style="color:  white; text-align:  justify;font-size: 35px;">
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;" >Find: Deep into the forest in order of searching the honeycomb (Hive)</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;" >Destruct: Destruction process is done in a safe manner in order to extract</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Extract: Extraction is a process done safely in order to get delicious honey</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;">Filter: Filtering is done in order to remove the bees from honey.</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Storage: The filtered honey is stored in a safe manner</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Delivery: After ordering the pure honey is delivered to your doorstep</li>
+
+  </p><br>
+  </div>
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+    <img src="five.png">
+  </div>
+</div>
+</section>
+     <hr style=" border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, #000, #FFD700, #000);">
+         <br><br>
+      <section class="container vertical-center" id="facts" >
+         <h3 class="text-center font-weight-bold" style="color:  gold; ">
+
+           FACTS
+                     <br><br>
+
+         </h3>
+ <nav class="nav justify-content-center nav-pills flex-md-row">
+           <strong style="font-size: 20px"> <a class="nav-link " href="#prop"  style=" color: white">PROPERTIES</a></strong>
+    <strong style="font-size: 20px">        <a class="nav-link" href="#ref"  style=" color: white">REFINED SUGAR AND HEALTH</a></strong>
+    <strong style="font-size: 20px">        <a class="nav-link " href="#med"  style=" color: white">MEDICINAL USES</a></strong>
+    <strong style="font-size: 20px">        <a class="nav-link " href="#must" style=" color: white">MUST NOT DO</a></strong>
+         
+        </nav>
+        <section id ="prop">
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="10.png" height="500" width="500">
+</div>
+
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+ 
+          <!-- <br><br><br> -->
+ <p style="color:gold; text-align: center; font-size: 30px;padding: 0px;top: 10px;right:145px;position: absolute;"><b id="proptex"><strong>PROPERTIES</strong></b></p>
+    <p style="color:white; text-align: justify; font-size: 20px;padding: 15px;\">
+According to the United States Department of Agriculture (USDA) National Nutrient Database, one
+tablespoon of honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
+Choosing honey over refined and processed sugar may lead to long-term health benefits. Honey is
+known to have antioxidant, antimicrobial, and soothing effects.The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant
+elements clean up free radicals that are linked to diseases.
+The physical properties of honey vary depending on the specific flora used in its production, as well as
+its water content.It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride,
+potassium, and magnesium.
+
+</p>
+
+</div>
+</div>
+
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+           <p style="color:white; text-align: justify; font-size: 20px;padding: 15px; top:20px; ">
+The typical honey profile, according to Bee Source:
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Fructose: 38.2 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Glucose: 31.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Maltose: 7.1 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Sucrose: 1.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Water: 17.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Sugars: 1.5 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Ash: 0.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 15px;margin-top: 5px ">Other: 3.2 %</li> 
+</p>
+
+
+
+</div>
+ <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="bee.png" height="500" width="500">
+</div>
+
+  
+</div>
+</section>
+
+<section id="ref">
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
+          <!-- <br><br><br> -->
+           <p style="color:gold; text-align: center; font-size: 30px;top: 30px;position: absolute;"><b id="reftext"><strong>REFINED SUGAR AND HEALTH </strong></b></p>
+
+ 
+    <p style="color:white; text-align: justify; font-size: 20px;padding: 15px; top:20px; ">
+While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for thousands of years, it’s become a huge disadvantage to our population over the past century. As sugar processing became more advanced, and sugar became a cheap commodity, it seemed that sugar was added to almost every processed food in one way or another. As health concerns rose, we learned that high sugar consumption can be related to other health issues like unhealthy weight management, poor metabolic health, heart health concerns and decreased immune system function. One Therefore, anyone who becomes health-conscious needs to make smart choices or seek other options when it comes to their consumption of refined sugar. One option is to minimize or eliminate processed sugars. The second option is making sure any isolated sugars consumed come from more natural, and nutritious sweeteners. This is where raw honey takes center stage.
+
+
+
+</p>
+</p>
+
+</div>
+
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="prop.png" height="500" width="500">
+</div>
+
+  
+</div>
+</section>
+<section id="med">
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 p-5">
+               <p style="color:gold; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MEDICINAL USES</strong></b></p>
+
+  <img src="ref.png" height="500" width="500">
+</div>
+
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+    <p style="color:white; text-align: justify; font-size: 20px;margin-bottom: 13px;">
+      <br>
+RAW HONEY has been used to treat a wide array of illnesses, ailments, and injuries.
+
+It can be mixed with other remedies and consumed or rubbed onto the skin. Practitioners of Ayurvedic
+medicine have attempted to use honey as a remedy for the following:
+stress ,weakness ,sleep disturbance, vision problems, bad breath, teeth pain in children over a year old,
+cough and asthma, hiccups, stomach ulcers, diarrhea and dysentery, vomiting, bedwetting and frequent
+urination, high blood pressure, obesity, jaundice, hangover relief, eczema dermatitis, burns, cuts, and
+wounds arthritis , Good in digestive system &amp; appetizer, Good for bone reunion &amp; eyes , improved skin
+complexion, has Git Ulcer properties , etc .
+</p>
+
+</div>
+</div>
+</section>
+<section id="must">
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+           <!-- <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p> -->
+                          <p style="color:gold; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p>
+
+               <p style="color:white; text-align: justify; font-size:17px;margin-bottom: 13px;">
+
+It is recommended that infants under a year old do not consume honey, Honey may contain botulinum
+endospores that cause infant botulism in very young children, a rare but serious type of food poisoning
+that can result in paralysis. Even pasteurized honey has a chance of containing these spores.While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for
+thousands of years, it’s become a huge disadvantage to our population over the past century. As sugar
+processing became more advanced, and sugar became a cheap commodity, it seemed that sugar was
+added to almost every processed food in one way or another.
+As health concerns rose, we learned that high sugar consumption can be related to other health issues
+like unhealthy weight management, poor metabolic health, heart health concerns and decreased
+immune system function.One Therefore, anyone who becomes health-conscious needs to make smart choices or seek other options when it comes to their consumption of refined sugar. One option is to
+minimize or eliminate processed sugars. The second option is making sure any isolated sugars consumed
+come from more natural, and nutritious sweeteners. This is where raw honey takes center stage.
+</p>
+
+</p>
+
+</div>
+  <div class="col-sm-12 col-lg-6 p-5">
+<br><br>
+  <img src="11.png" height="500" width="500">
+</div>
+
+  
+</div>
+</section>
+      </section>
+      <br>
+      <hr style=" border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, #000, #FFD700, #000);">
+         <br><br>
+      <section class="container vertical-center" id="services" >
+         <h3 class="text-center font-weight-bold"  style="color:  gold">
+        SERVICES
+                            <br><br>
+
+
+         </h3>         
+        <div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="eight.png" height="500" width="500">
+</div>
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+ 
+<br><br><br><br><br>
+
+<h2 style="color:white; text-align:center;font-size: 30px;padding:0px;margin-top: 10px  ">
+<b></strong>Online Delivery: Buy Honey Online</strong></h2></b>
+
+
+<ul>
+  <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  ">We accept online order</li>
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  "> Collect the honey at your door step</li>
+<li style="color:white; text-align:  left;font-size: 28px;padding: 15px;margin-top: 5px  ">Any issuses ping us on WhatsApp </li>
+</ul>  
+<br><br>
+<!-- <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
+</strong></h2>
+
+</p>
+
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Only within Chennai</li>
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Cash on Delivery Available</li> -->
+
+</div>
+</div>
+
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 p-5">
+    <br><br><br><br><br>
+<br>
+    <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Offline Stores
+</strong></h2>
+
+</p>
+
+<li style="color:white; text-align:  right;font-size: 28px;padding: 15px;margin-top: 5px ">Buy Honey from our Outlets</li>
+<li style="color:white; text-align:  right;font-size: 28px;padding: 15px;margin-top: 5px ">All mode of payments accepted</li>
+
+  </div>
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+    <img src="10.png">
+  </div>
+</div>
+      </section>
+
+      <br><br><br>
+      <br>
+      <hr style=" border: 0;
+         height: 2px;
+
+         background-image: linear-gradient(to right, #000, #FFD700, #000);">
+         <br><br>
+         <!-- <h3>ABOUT US</h3> -->
+      <section class="container vertical-center" id="about us" >
+<h3 class="text-center font-weight-bold"  style="color:  gold">ABOUT US</h3>
+       <div class="row container-fluid p-5">
+        <div class="col-sm-12 col-lg-6 text-success p-5">
+
+    <!-- <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px  "> -->
+                    <p style="color:white; text-align:  justify-all;font-size: 25px;  ">
+ <b>Let me tell a honey story pay attention listen to me!!</b>
+
+Hi this is Bhuvanesh (Fitness Enthusiast, Entrepreneur) and coming to the story, I would like to
+finish it simple.
+Yes ,Honey plays a major role in my life because I&#39;m addicted to the taste of honey in my early ages (
+but I would intake it not often since there is huge demand ) &amp; I lost the addiction towards it for many
+years, after I grew up , I thought that standard honey&#39;s are best &amp; real and it&#39;s been available
+everywhere like shops, supermarkets, etc.. 
+
+                                
+<!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ --> <br><br>
+
+</p>
+     
+    </p>
+
+</div>
+  <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="bio.jpeg" height="500" width="500">
+</div>
+  
+</div>
+        
+   
+<!-- <p style="color:white; text-align:  center;font-size: 30px;">NOTE - Life is very short nanba , always be healthy!!!</p>
+ --><!-- <br><br> --><p style="text-align: justify;">I kept drinking it and I felt that it&#39;s not the one what I tasted
+in my early age. And, here I get to know about differences between A RAW HONEY vs STANDARD
+HONEY. then, I made a right decision of changing it to RAW HONEY.YES, I&#39;ll accept the fact that it&#39;s more
+nutritious, delicious!! And I myself I&#39;ve been intaking RAW HONEY for the past few years and I&#39;m feeling
+absolutely good &amp; healthy &amp; energetic. Just a slight change, instead of sugar I changed to honey since
+it&#39;s natural and has more health benefits.ThaenVeedu takes pride on selling authentic, pure, good Quality Organic products which is very good for
+our Body. No Chemicals added in our products.
+As a Customer, You get only authentic Environmental friendly Product with Utmost Quality,
+
+</p>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong>Compatbility: </b></strong>Our Website is compatible with Desktop&#39;s/Mobile</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Payment Gateway: </b> </strong>Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
+Payment Gateway(Gpay)</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Conclusion: </b> </strong>Go For Real One!</li>
+
+
+</div>  
+      </section>
+       <br><br><br><br>
+      <hr style=" border: 0;
+         height: 2px;
+         background-image: linear-gradient(to right, #000, #FFD700, #000);">
+         <br><br>
+      <section class="container vertical-center" id="products" >
+<h3 class="text-center font-weight-bold" style="color:gold">
+           SHOP</h3>
+
+           <br><br><br>
+
+<div id="bottleshop" class="row text-center">
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott1" style="margin-top: 100px;" src="bottle.png">
+		<figcaption class="figure-caption text-center">100ml</figcaption>
+	</div>
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott2" style="margin-top: 50px;" src="bottle.png"  >
+	 	<figcaption class="figure-caption text-center">250ml</figcaption>
+	</div> 
+	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott3" style="margin-top: 0;" src="bottle.png"  >
+		<figcaption class="figure-caption text-center">500ml</figcaption>
+	</div>
+<br><br><br>
+</div> 
+            
+     <!-- <div id="ml" style="display: flex;position: relative;"> -->
+
+
+<!-- <button type="button" id="warn" class="btn btn-warning" style="width: 145px;"><strong><b style="font-color:black" id ="buylast">BUY <br>
+  NOW</b></strong></button> -->
+<br><br><br>
+<div >
+ <button class="btn btn-warning"  data-toggle="modal" id ="warning" data-target="#exampleModalCenter" >
+    <b>  <strong  id ="buylast"style="color: black"  >BUY NOW</strong></b>
+  </button>
+</div>    
+      <div class="modal fade bg-secondary" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-light text-dark">
+               <div class="modal-header">
+                  <h5 class="modal-title font-weight-bold" id="exampleModalLongTitle"><strong style="color: black;font-size: 30px"><b>&nbsp;
+ BUY NOW </strong> </h5></b>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <!-- <span aria-hidden="true">&times;</span> -->
+                  </button>
+                  <img id="botmodal" src="bottle.png">
+
+               </div>
+               <div class="modal-body m-3">
+               
+
+ <strong><b id="quatext" style="font-size: 20px; color: black" > 
+  <!-- <br><br><br> -->
+<!-- QUANTITY  </b></strong><input type="text" id="box" style="text-align:center;"> -->
+
+   <label for="cars">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUANTITY:</label>
+  <select name="cars" id="cars">
+    <option value="100ml">100 ml</option>
+    <option value="250ml">250 ml </option>
+    <option value="500ml">500 ml</option>
+    <!-- <option value="audi">Audi</option> -->
+  </select>
+ 
+                               
+<br><br>
+
+  
+  <div id="buy-now" style="position: relative;right: -110px; " >                 
+                              </div>
+
+       </div>
+     </div>
+</div>
+ </div>
+   </div>
+ </div>
+
+</h3>
+</section>
+<footer class="text-light bg-dark sticky-bottom" id="contact">
+
+  
+  <div class="container">
+
+    
+    <ul class="list-unstyled list-inline text-center">
+
+      <li class="list-inline-item">
+        <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
+
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+          <a href="https://www.instagram.com/thaenveedu/?igshid=4d15yiu9ibiz" class="fa fa-instagram"></a>
+
+
+      </li>
+
+       <li class="list-inline-item">
+<a href="thaenveedu@gmail.com" class="fa fa-google"></a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="footer-copyright text-center py-3">©️ 2020 Terms & Conditions: Exchange only if damaged<br>
+    <p  >Address:
+ 
+  No.2/6, New Street,
+ 
+Kallikuppam, 
+Ambattur, 
+Chennai-53</p>
+
+    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
+
+  </div>
+
+</footer>
+   </body>
+<!-- <style >
+   .example-address-input{
+   
+    text-align: right; 
+
+}
+</style> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
+
+<body>
+  <div id="WAButton"></div>
+</body> 
+
+<script type="text/javascript">  
+   $(function () {
+                $('#WAButton').floatingWhatsApp({
+               phone: '+91 9176026892', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, how can we help you?', //Popup Message
+               // showPopup: true, //Enables popup display
+               buttonImage: '<img src="whatsapp.jpg" />',
+               position: "right" //Position: left | right
+           });
+       });
+</script> 
+
+<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="floating-wpp.min.js"></script>
+<link rel="stylesheet" href="floating-wpp.min.css">
+<div id='printchatbox'></div>
+
+<!-- <input type='text' name='fname'id='chatinput'> -->
+<script >
+   // var x;
+   var y=500;
+   var a =490;
+   $(document).ready(function(){
+  //  $("input").keyup(function(){
+  //   $("input").css("background-color", "#C0C0C0");
+  // }
+  $("input").keyup(function(){
+    $("input").css("background-color", "#FFD700");
+     var jjj = document.getElementById("box").value;
+   
+    $("input").css("background-color", "#C0C0C0");
+    j=parseInt(jjj);
+    y=500*j;
+    a=y-10;
+    // alert(y);
+    if(j>10 || j<0)
+    {
+      alert('You can buy only upto 10 items');
+      y='a';
+    }
+  });
+});
+
+alert(x);
+  alert(y);
+  alert(a);
+
+</script>
+<script async
+  src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()"  >
+
+</script>
+
+<script>
+
+
+  /**
+ * Define the version of the Google Pay API referenced when creating your
+ * configuration
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|apiVersion in PaymentDataRequest}
+ */
+const baseRequest = {
+  apiVersion: 2,
+  apiVersionMinor: 0
+};
+
+/**
+ * Card networks supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm card networks supported by your site and gateway
+ */
+const allowedCardNetworks = ["AMEX", "DISCOVER", "JCB", "MASTERCARD", "VISA"];
+
+/**
+ * Card authentication methods supported by your site and your gateway
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ * @todo confirm your processor supports Android device tokens for your
+ * supported card networks
+ */
+const allowedCardAuthMethods = ["PAN_ONLY", "CRYPTOGRAM_3DS"];
+
+/**
+ * Identify your gateway and your site's gateway merchant identifier
+ *
+ * The Google Pay API response will return an encrypted payment method capable
+ * of being charged by a supported gateway after payer authorization
+ *
+ * @todo check with your gateway on the parameters to pass
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#gateway|PaymentMethodTokenizationSpecification}
+ */
+const tokenizationSpecification = {
+  type: 'PAYMENT_GATEWAY',
+  parameters: {
+    'gateway': 'example',
+    'gatewayMerchantId': 'exampleGatewayMerchantId'
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method and its required
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const baseCardPaymentMethod = {
+  type: 'CARD',
+  parameters: {
+    allowedAuthMethods: allowedCardAuthMethods,
+    allowedCardNetworks: allowedCardNetworks
+  }
+};
+
+/**
+ * Describe your site's support for the CARD payment method including optional
+ * fields
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#CardParameters|CardParameters}
+ */
+const cardPaymentMethod = Object.assign(
+  {},
+  baseCardPaymentMethod,
+  {
+    tokenizationSpecification: tokenizationSpecification
+  }
+);
+
+/**
+ * An initialized google.payments.api.PaymentsClient object or null if not yet set
+ *
+ * @see {@link getGooglePaymentsClient}
+ */
+let paymentsClient = null;
+
+/**
+ * Configure your site's support for payment methods supported by the Google Pay
+ * API.
+ *
+ * Each member of allowedPaymentMethods should contain only the required fields,
+ * allowing reuse of this base request when determining a viewer's ability
+ * to pay and later requesting a supported payment method
+ *
+ * @returns {object} Google Pay API version, payment methods supported by the site
+ */
+function getGoogleIsReadyToPayRequest() {
+  return Object.assign(
+      {},
+      baseRequest,
+      {
+        allowedPaymentMethods: [baseCardPaymentMethod]
+      }
+  );
+}
+
+/**
+ * Configure support for the Google Pay API
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#PaymentDataRequest|PaymentDataRequest}
+ * @returns {object} PaymentDataRequest fields
+ */
+function getGooglePaymentDataRequest() {
+  const paymentDataRequest = Object.assign({}, baseRequest);
+  paymentDataRequest.allowedPaymentMethods = [cardPaymentMethod];
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+  paymentDataRequest.merchantInfo = {
+    // @todo a merchant ID is available for a production environment after approval by Google
+    // See {@link https://developers.google.com/pay/api/web/guides/test-and-deploy/integration-checklist|Integration checklist}
+    // merchantId: '01234567890123456789',
+    merchantName: 'Example Merchant'
+  };
+
+  paymentDataRequest.callbackIntents = ["SHIPPING_ADDRESS",  "SHIPPING_OPTION", "PAYMENT_AUTHORIZATION"];
+  paymentDataRequest.shippingAddressRequired = true;
+  paymentDataRequest.shippingAddressParameters = getGoogleShippingAddressParameters();
+  paymentDataRequest.shippingOptionRequired = true;
+
+  return paymentDataRequest;
+}
+
+/**
+ * Return an active PaymentsClient or initialize
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#PaymentsClient|PaymentsClient constructor}
+ * @returns {google.payments.api.PaymentsClient} Google Pay API client
+ */
+function getGooglePaymentsClient() {
+  if ( paymentsClient === null ) {
+    paymentsClient = new google.payments.api.PaymentsClient({
+      environment: "TEST",
+      merchantInfo: {
+        merchantName: "Example Merchant",
+        merchantId: "01234567890123456789"
+      },
+      paymentDataCallbacks: {
+        onPaymentAuthorized: onPaymentAuthorized,
+        onPaymentDataChanged: onPaymentDataChanged
+      }
+    });
+  }
+  return paymentsClient;
+}
+
+
+function onPaymentAuthorized(paymentData) {
+  return new Promise(function(resolve, reject){
+
+  // handle the response
+  processPayment(paymentData)
+    .then(function() {
+      resolve({transactionState: 'SUCCESS'});
+    })
+    .catch(function() {
+        resolve({
+        transactionState: 'ERROR',
+        error: {
+          intent: 'PAYMENT_AUTHORIZATION',
+          message: 'Insufficient funds',
+          reason: 'PAYMENT_DATA_INVALID'
+        }
+      });
+    });
+
+  });
+}
+
+/**
+ * Handles dynamic buy flow shipping address and shipping options callback intents.
+ *
+ * @param {object} itermediatePaymentData response from Google Pay API a shipping address or shipping option is selected in the payment sheet.
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#IntermediatePaymentData|IntermediatePaymentData object reference}
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataRequestUpdate|PaymentDataRequestUpdate}
+ * @returns Promise<{object}> Promise of PaymentDataRequestUpdate object to update the payment sheet.
+ */
+function onPaymentDataChanged(intermediatePaymentData) {
+  return new Promise(function(resolve, reject) {
+
+    let shippingAddress = intermediatePaymentData.shippingAddress;
+    let shippingOptionData = intermediatePaymentData.shippingOptionData;
+    let paymentDataRequestUpdate = {};
+
+    if (intermediatePaymentData.callbackTrigger == "INITIALIZE" || intermediatePaymentData.callbackTrigger == "SHIPPING_ADDRESS") {
+      if(shippingAddress.administrativeArea == "NJ")  {
+        paymentDataRequestUpdate.error = getGoogleUnserviceableAddressError();
+      }
+      else {
+        paymentDataRequestUpdate.newShippingOptionParameters = getGoogleDefaultShippingOptions();
+        let selectedShippingOptionId = paymentDataRequestUpdate.newShippingOptionParameters.defaultSelectedOptionId;
+        paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(selectedShippingOptionId);
+      }
+    }
+    else if (intermediatePaymentData.callbackTrigger == "SHIPPING_OPTION") {
+      paymentDataRequestUpdate.newTransactionInfo = calculateNewTransactionInfo(shippingOptionData.id);
+    }
+
+    resolve(paymentDataRequestUpdate);
+  });
+}
+
+/**
+ * Helper function to create a new TransactionInfo object.
+
+ * @param string shippingOptionId respresenting the selected shipping option in the payment sheet.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function calculateNewTransactionInfo(shippingOptionId) {
+  let newTransactionInfo = getGoogleTransactionInfo();
+
+  let shippingCost = getShippingCosts()[shippingOptionId];
+  newTransactionInfo.displayItems.push({
+    type: "LINE_ITEM",
+    label: "Shipping cost",
+    price: shippingCost,
+    status: "FINAL"
+  });
+
+  let totalPrice = 0.00;
+  newTransactionInfo.displayItems.forEach(displayItem => totalPrice += parseFloat(displayItem.price));
+  newTransactionInfo.totalPrice = totalPrice.toString();
+
+  return newTransactionInfo;
+}
+
+/**
+ * Initialize Google PaymentsClient after Google-hosted JavaScript has loaded
+ *
+ * Display a Google Pay payment button after confirmation of the viewer's
+ * ability to pay.
+ */
+function onGooglePayLoaded() {
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.isReadyToPay(getGoogleIsReadyToPayRequest())
+      .then(function(response) {
+        if (response.result) {
+          addGooglePayButton();
+          // @todo prefetch payment data to improve performance after confirming site functionality
+          // prefetchGooglePaymentData();
+        }
+      })
+      .catch(function(err) {
+        // show error in developer console for debugging
+        console.error(err);
+      });
+}
+
+/**
+ * Add a Google Pay purchase button alongside an existing checkout button
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ButtonOptions|Button options}
+ * @see {@link https://developers.google.com/pay/api/web/guides/brand-guidelines|Google Pay brand guidelines}
+ */
+function addGooglePayButton() {
+  const paymentsClient = getGooglePaymentsClient();
+  const button = paymentsClient.createButton({onClick: onGooglePaymentButtonClicked});
+  document.getElementById('buy-now').appendChild(button);
+}
+
+/**
+ * Provide Google Pay API with a payment amount, currency, and amount status
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#TransactionInfo|TransactionInfo}
+ * @returns {object} transaction info, suitable for use as transactionInfo property of PaymentDataRequest
+ */
+function getGoogleTransactionInfo() {
+  return {
+    displayItems: [
+      {
+        label: "Subtotal",
+        type: "SUBTOTAL",
+        price: a.toString(),
+        // price:"490",
+      },
+      {
+        label: "Tax",
+        type: "TAX",
+        price: "10",
+      }
+    ],
+    countryCode: 'IN',
+    currencyCode: "INR",
+    totalPriceStatus: "FINAL",
+    // totalPrice:"500",
+    totalPrice: y.toString(),
+    totalPriceLabel: "Total"
+  };
+}
+
+/**
+ * Provide a key value store for shippping options.
+ */
+function getShippingCosts() {
+  return {
+    "shipping-001": "50",
+    "shipping-002": "70",
+    "shipping-003": "90",
+    "shipping-004": "150"
+    
+  }
+}
+
+/**
+ * Provide Google Pay API with shipping address parameters when using dynamic buy flow.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingAddressParameters|ShippingAddressParameters}
+ * @returns {object} shipping address details, suitable for use as shippingAddressParameters property of PaymentDataRequest
+ */
+function getGoogleShippingAddressParameters() {
+  return  {
+    allowedCountryCodes: ['IN'],
+    phoneNumberRequired: true
+  };
+}
+
+/**
+ * Provide Google Pay API with shipping options and a default selected shipping option.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/request-objects#ShippingOptionParameters|ShippingOptionParameters}
+ * @returns {object} shipping option parameters, suitable for use as shippingOptionParameters property of PaymentDataRequest
+ */
+function getGoogleDefaultShippingOptions() {
+  return {
+    defaultSelectedOptionId: "shipping-001",
+    shippingOptions: [
+      {
+        "id": "shipping-001",
+        "label": "+50:Ship within Chennai",
+        
+      },
+      {
+        "id": "shipping-002",
+        "label": "+70: Ship within Coimbatore",
+      
+      },
+      {
+        "id": "shipping-003",
+        "label": "+90:Ship within Madurai",
+        
+      },
+      {
+        "id": "shipping-004",
+        "label": "+150:Ship outside TN",
+        
+      },
+    ]
+  };
+}
+
+/**
+ * Provide Google Pay API with a payment data error.
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentDataError|PaymentDataError}
+ * @returns {object} payment data error, suitable for use as error property of PaymentDataRequestUpdate
+ */
+function getGoogleUnserviceableAddressError() {
+  return {
+    reason: "SHIPPING_ADDRESS_UNSERVICEABLE",
+    message: "Cannot ship to the selected address",
+    intent: "SHIPPING_ADDRESS"
+  };
+}
+
+/**
+ * Prefetch payment data to improve performance
+ *
+ * @see {@link https://developers.google.com/pay/api/web/reference/client#prefetchPaymentData|prefetchPaymentData()}
+ */
+function prefetchGooglePaymentData() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  // transactionInfo must be set but does not affect cache
+  paymentDataRequest.transactionInfo = {
+    totalPriceStatus: 'NOT_CURRENTLY_KNOWN',
+    currencyCode: 'INR'
+  };
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.prefetchPaymentData(paymentDataRequest);
+}
+
+
+
+/**
+ * Show Google Pay payment sheet when Google Pay payment button is clicked
+ */
+function onGooglePaymentButtonClicked() {
+  const paymentDataRequest = getGooglePaymentDataRequest();
+  paymentDataRequest.transactionInfo = getGoogleTransactionInfo();
+
+  const paymentsClient = getGooglePaymentsClient();
+  paymentsClient.loadPaymentData(paymentDataRequest);
+}
+
+/**
+ * Process payment data returned by the Google Pay API
+ *
+ * @param {object} paymentData response from Google Pay API after user approves payment
+ * @see {@link https://developers.google.com/pay/api/web/reference/response-objects#PaymentData|PaymentData object reference}
+ */
+function processPayment(paymentData) {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      // show returned data in developer console for debugging
+      console.log(paymentData);
+      // @todo pass payment token to your gateway to process payment
+      paymentToken = paymentData.paymentMethodData.tokenizationData.token;
+
+      resolve({});
+    }, 3000);
+  });
+}
+</script>
+
+<style >
+	
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover{
+  color:  #C0C0C0;
+}
+
+.fa-facebook {
+  color: #5050D0;
+}
+
+.fa-twitter {
+  color: #ADD8E6;
+}
+
+
+.fa-google {
+  color: #CB0000;
+}
+
+.fa-linkedin {
+  color:#7AB9F0;
+}
+
+
+.fa-instagram {
+  color: pink;
+}
+
+</style>
+
+
+
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+<!-- <div class="row container-fluid p-5">
+    <div class="col-sm-20 col-lg-8 text-success p-5"> -->
+ 
+
+<!-- <footer class="text-light bg-dark sticky-bottom" id="contact">
+
+  
+  <div class="container">
+
+    
+    <ul class="list-unstyled list-inline text-center">
+
+      <li class="list-inline-item">
+        <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
+
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+          <a href="https://www.instagram.com/thaenveedu/?igshid=4d15yiu9ibiz" class="fa fa-instagram"></a>
+
+
+      </li>
+
+       <li class="list-inline-item">
+<a href="thaenveedu@gmail.com" class="fa fa-google"></a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="footer-copyright text-center py-3">©️ 2020 Terms & Conditions: Exchange only if damaged<br>
+    <p  >Address:
+ 
+  No.2/6, New Street,
+ 
+Kallikuppam, 
+Ambattur, 
+Chennai-53</p>
+
+    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
+
+  </div>
+
+</footer> -->
+
+</div>
+
+  
+<style>
+  body{
+    background-color: black;
+  }
+  #wh1{
+  	 color:  #FFD700;
+  }
+  .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover{
+  color:  #FFD700;
+}
+/*
+.fa-facebook {
+  color: #5050D0;
+}
+
+.fa-twitter {
+  color: #ADD8E6;
+}
+*/
+
+.fa-google {
+  color: #CB0000;
+}
+
+
+
+
+.fa-instagram {
+  color: pink;
+}
+</style>
+
+
+
+
+</html>
