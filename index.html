@@ -12,6 +12,72 @@
 
    </head>
    <body>
+   	<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+#servimg1
+{
+  height: 70vh;
+}
+#servimg2
+{
+  height: 50vh;
+}
+#pronav:hover
+{
+	background-color: #808080  ;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  /*right: 900px;*/
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: green;
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
  <style type="text/css">
       
         
@@ -53,13 +119,14 @@
          section{
             vertical-align: middle;
          }
-         
+
          .btn:hover{
          scale: 1.1;
          transition-duration: 0.1s;
          }
          .bi-hexagon:hover {
           scale: 1.015;
+          color: #FFD700;
          }
          .btn.special:hover{
          scale: 1.0;
@@ -80,6 +147,13 @@
          }
          /*/Responsiveness/*/
       @media (min-width: 360px) {
+      	#med
+      	{
+      		height: 100vh;
+      	}
+      	#myBtn {
+      		right: 900px;
+      	}
 
       	#tex100ml
       	{
@@ -105,7 +179,9 @@
         {
           position: relative;
           bottom: -30px;
-          right: -300px;
+          right: -240px;
+          height: 100px;
+          width: 180px;
 
         }
 
@@ -176,15 +252,15 @@
         border:0;
         }*/
 
-        #bottle
-        { 
-          top:-30px;
-
-          height: 99%;
-          width: 20%;
-          position: relative;
-         left: 400px;
-         background-blend-mode: multiply;
+          #bottle
+        {
+          top:58px;
+          background-blend-mode: multiply;
+          height: 49%;
+          width: 14%;
+          position: absolute;
+          left: 414px;
+          opacity: 0.5;
         }
         #address
         {
@@ -195,8 +271,8 @@
 
 
           #products{
-   height: 120vh;
-}
+  		 height: 110vh;
+		}
         p{
           font-size: 23.5px;
         }
@@ -326,7 +402,7 @@ font-size:19px;
    }      
 
 #facts{
-   height: 440vh;
+   height: 500vh;
 }
 #about{
    height: 130vh;
@@ -359,6 +435,9 @@ font-size:19px;
         }
       }
       @media (min-width: 992px) {
+      	 	#myBtn {
+      		right: 1250px;
+      	}
       	.bott3,.bott2,.bott1
         {
           height: 350px;
@@ -385,6 +464,9 @@ font-size:19px;
           position: relative;
           bottom: -30px;
           right: -470px;
+          width: 90px;
+          width: 180px;
+          /*left: 100px;*/
           
         }
 
@@ -468,18 +550,18 @@ font-size:19px;
 
 
         {
-        	 top:-10px;
+        	 top:25px;
           background-blend-mode: multiply;
-          height: 99%;
-          width: 8%;
+          height: 59%;
+          width: 5%;
            position: relative;
-         left: 630px;
+         left: 647px;
         }
         #address{
           margin-right: -30px;
         }
        #products{
-   height: 100vh;
+   height: 120vh;
 }
         #starting{
           height: 65vh;
@@ -619,10 +701,11 @@ font-size:15px;
          <div class="hex">
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
-                <text id="font" class="font-weight-bold" x="50%" y="50%"  text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">SHOP</text>
-                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">SHOP</a></text>
+                  <text id="font" class="font-weight-bold " id="serv" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;font-color:white">SHOP</text>
+                   <text  id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="white" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">SHOP</a></text>
+                   
                </svg>
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
@@ -642,16 +725,15 @@ font-size:15px;
                  
                </svg>
                <!-- BUYYYYYYYYYYYYY-->
-              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg"></svg>
-                 <!--  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/> -->
+              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
 <a href="#products">       
   <img  src="drop.jpeg" id="bottle"  alt="honeybottle"style="position: absolute;margin-left: -105px;margin-top: -2px"></a>
- 
-                 
+               </svg>  
                
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
-                  <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">FACTS</text>
+                  <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px">FACTS</text>
                    <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#facts">FACTS</a></text>
                </svg>
             </div>
@@ -661,7 +743,7 @@ font-size:15px;
                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                    <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">ABOUT US </text>
-                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#about us">ABOUT US </a></text>
+                   <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#about us" >ABOUT US </a></text>
                </svg>
                 <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
@@ -677,7 +759,7 @@ font-size:15px;
         <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
-<h3 class="text-center font-weight-bold"  style="color:  white">JOURNEY</h3>
+<h3 class="text-center font-weight-bold"  style="color:  gold">JOURNEY</h3>
 
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
@@ -703,17 +785,17 @@ font-size:15px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
          <br><br>
       <section class="container vertical-center" id="facts" >
-         <h3 class="text-center font-weight-bold" style="color:  white; ">
+         <h3 class="text-center font-weight-bold" style="color:  gold; ">
 
            FACTS
                      <br><br>
 
          </h3>
  <nav class="nav justify-content-center nav-pills flex-md-row">
-           <strong style="font-size: 20px"> <a class="nav-link " href="#prop"  style=" color: white">PROPERTIES</a></strong>
-    <strong style="font-size: 20px">        <a class="nav-link" href="#ref"  style=" color: white">REFINED SUGAR AND HEALTH</a></strong>
-    <strong style="font-size: 20px">        <a class="nav-link " href="#med"  style=" color: white">MEDICINAL USES</a></strong>
-    <strong style="font-size: 20px">        <a class="nav-link " href="#must" style=" color: white">MUST NOT DO</a></strong>
+           <strong style="font-size: 20px"> <a id="pronav"class="nav-link " href="#prop"  style=" color: white">PROPERTIES</a></strong>
+    <strong style="font-size: 20px">        <a id="pronav" class="nav-link" href="#ref"  style=" color: white">REFINED SUGAR AND HEALTH</a></strong>
+    <strong style="font-size: 20px">        <a id="pronav" class="nav-link " href="#med"  style=" color: white">MEDICINAL USES</a></strong>
+    <strong style="font-size: 20px">        <a id="pronav" class="nav-link " href="#must" style=" color: white">MUST NOT DO</a></strong>
          
         </nav>
         <section id ="prop">
@@ -727,7 +809,7 @@ font-size:15px;
 
  
           <!-- <br><br><br> -->
- <p style="color:white; text-align: center; font-size: 30px;padding: 0px;top: 10px;right:145px;position: absolute;"><b id="proptex"><strong>PROPERTIES</strong></b></p>
+ <p style="color:gold; text-align: center; font-size: 30px;padding: 0px;top: 10px;right:145px;position: absolute;"><b id="proptex"><strong>PROPERTIES</strong></b></p>
     <p style="color:white; text-align: justify; font-size: 20px;padding: 15px;\">
 According to the United States Department of Agriculture (USDA) National Nutrient Database, one
 tablespoon of honey contains 64 calories, 17.3 grams (g) of sugar, and 0 g of fiber, fat, and protein.
@@ -735,38 +817,54 @@ Choosing honey over refined and processed sugar may lead to long-term health ben
 known to have antioxidant, antimicrobial, and soothing effects.The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant
 elements clean up free radicals that are linked to diseases.
 The physical properties of honey vary depending on the specific flora used in its production, as well as
-its water content.
-
-
+its water content.It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride,
+potassium, and magnesium.
 
 </p>
 
 </div>
 </div>
-<section id="ref">
+
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
-    <p style="color:white; text-align: justify; font-size: 30px;padding: 15px;\">
-          <!-- <br><br><br> -->
-           <p style="color:white; text-align: center; font-size: 30px;top: 30px;position: absolute;"><b id="reftext"><strong>REFINED SUGAR AND HEALTH </strong></b></p>
+           <p style="color:white; text-align: justify; font-size: 20px;padding: 15px; top:20px; ">
+The typical honey profile, according to Bee Source:
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Fructose: 38.2 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Glucose: 31.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Maltose: 7.1 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Sucrose: 1.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Water: 17.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Sugars: 1.5 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Ash: 0.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Other: 3.2 %</li> 
+</p>
 
+
+
+</div>
+ <div class="col-sm-12 col-lg-6 p-5">
+    
+  <img src="bee.png" height="500" width="500">
+</div>
+
+  
+</div>
+</section>
+
+<section id="ref">
+ <p style="color:gold; text-align: center;font-size: 30px;"> <b><strong>REFINED SUGAR AND HEALTH </strong></b></p>
+
+<div class="row container-fluid p-5">
+  <div class="col-sm-12 col-lg-6 text-success p-5">
+
+    <!-- <p style="color:white; text-align: justify; font-size: 30px;"> -->
+          <!-- <br><br><br> -->
+          
  
-    <p style="color:white; text-align: justify; font-size: 20px;padding: 15px; top:20px; ">
-It is made up of glucose, fructose, and minerals, such as iron, calcium, phosphate, sodium chloride,
-potassium, and magnesium.
-Below is a typical honey profile, according to Bee Source:Fructose: 38.2 percent
-Glucose: 31.3 percent
-Maltose: 7.1 percent
-Sucrose: 1.3 percent
-Water: 17.2 percent
-Higher sugars: 1.5 percent
-Ash: 0.2 percent
-Other: 3.2 percent
-The slightly acidic pH level of honey is what helps prevent the growth of bacteria, while its antioxidant
-elements clean up free radicals that are linked to diseases.
-The physical properties of honey vary depending on the specific flora used in its production, as well as
-its water content.
+    <p style="color:white; text-align: justify; font-size: 18.5px;">
+While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for thousands of years, it’s become a huge disadvantage to our population over the past century. As sugar processing became more advanced, and sugar became a cheap commodity, it seemed that sugar was added to almost every processed food in one way or another. As health concerns rose, we learned that high sugar consumption can be related to other health issues like unhealthy weight management, poor metabolic health, heart health concerns and decreased immune system function. One Therefore, anyone who becomes health-conscious needs to make smart choices or seek other options when it comes to their consumption of refined sugar. One option is to minimize or eliminate processed sugars. The second option is making sure any isolated sugars consumed come from more natural, and nutritious sweeteners. This is where raw honey takes center stage.
+
 
 
 </p>
@@ -785,13 +883,13 @@ its water content.
 <section id="med">
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
-               <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MEDICINAL USES</strong></b></p>
+               <p style="color:gold; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MEDICINAL USES</strong></b></p>
 
   <img src="ref.png" height="500" width="500">
 </div>
 
   <div class="col-sm-12 col-lg-6 text-success p-5">
-    <p style="color:white; text-align: justify; font-size: 20px;margin-bottom: 13px;">
+    <p style="color:white; text-align: justify; font-size: 22.78px;position: absolute;margin-bottom: 13px;">
       <br>
 RAW HONEY has been used to treat a wide array of illnesses, ailments, and injuries.
 
@@ -807,14 +905,20 @@ complexion, has Git Ulcer properties , etc .
 </div>
 </div>
 </section>
+<!-- <br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br> -->
+<br><br>
 <section id="must">
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
-           <!-- <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p> -->
-                          <p style="color:white; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p>
+           <p style="color:#FFD700; text-align: center; font-size: 30px;margin-bottom: 10px;"><b ><strong>MUST NOT DO</strong></b></p>
+                          
 
-               <p style="color:white; text-align: justify; font-size:17px;margin-bottom: 13px;">
+               <p style="color:white; text-align: justify; font-size:18px;">
 
 It is recommended that infants under a year old do not consume honey, Honey may contain botulinum
 endospores that cause infant botulism in very young children, a rare but serious type of food poisoning
@@ -824,10 +928,10 @@ processing became more advanced, and sugar became a cheap commodity, it seemed t
 added to almost every processed food in one way or another.
 As health concerns rose, we learned that high sugar consumption can be related to other health issues
 like unhealthy weight management, poor metabolic health, heart health concerns and decreased
-immune system function.1 Therefore, anyone who becomes health-conscious needs to make smart
-choices or seek other options when it comes to their consumption of refined sugar. One option is to
+immune system function.One Therefore, anyone who becomes health-conscious needs to make smart choices or seek other options when it comes to their consumption of refined sugar.
+<!--  One option is to
 minimize or eliminate processed sugars. The second option is making sure any isolated sugars consumed
-come from more natural, and nutritious sweeteners. This is where raw honey takes center stage.
+come from more natural, and nutritious sweeteners. This is where raw honey takes center stage. -->
 </p>
 
 </p>
@@ -835,20 +939,20 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 </div>
   <div class="col-sm-12 col-lg-6 p-5">
 <br><br>
-  <img src="11.png" height="500" width="500">
+  <img src="11.png" id="mustpic" height="700%" width="700">
 </div>
 
   
 </div>
+<!-- </section> -->
 </section>
-      </section>
       <br>
       <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
          <br><br>
       <section class="container vertical-center" id="services" >
-         <h3 class="text-center font-weight-bold"  style="color:  white">
+         <h3 class="text-center font-weight-bold"  style="color:  gold">
         SERVICES
                             <br><br>
 
@@ -857,12 +961,12 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
         <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
     
-  <img src="eight.png" height="500" width="500">
+  <img src="eight.png" id="servimg1">
 </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
 
  
-<br><br><br><br><br>
+<!-- <br><br><br><br><br> -->
 
 <h2 style="color:white; text-align:center;font-size: 30px;padding:0px;margin-top: 10px  ">
 <b></strong>Online Delivery: Buy Honey Online</strong></h2></b>
@@ -870,8 +974,8 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 
 <ul>
   <li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  ">We accept online order</li>
-<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  "> Cash on Delivery Available</li>
-
+<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px  "> Collect the honey at your door step</li>
+<li style="color:white; text-align:  left;font-size: 28px;padding: 15px;margin-top: 5px  ">Any issuses ping us on WhatsApp </li>
 </ul>  
 <br><br>
 <!-- <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
@@ -887,19 +991,19 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
-    <br><br><br><br><br>
+    <!-- <br><br><br><br><br> -->
 <br>
-    <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-top: 10px  "><strong>Door Step Delivery: Buy Honey at Door
+    <h2 style="color:white; text-align:  center;font-size: 30px;padding: 10px;margin-bottom: -20px;position: relative;"><strong>Offline Stores
 </strong></h2>
-
+<br><br>
 </p>
 
-<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Only within Chennai</li>
-<li style="color:white; text-align:  justify;font-size: 28px;padding: 15px;margin-top: 5px ">Cash on Delivery Available</li>
+<li style="color:white; text-align:  justify;font-size: 28px;">Buy Honey from our Outlets</li>
+<li style="color:white; text-align:  justify;font-size: 28px;">All mode of payments accepted</li>
 
   </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
-    <img src="10.png">
+    <img src="10.png" id="servimg2">
   </div>
 </div>
       </section>
@@ -913,15 +1017,15 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
          <br><br>
          <!-- <h3>ABOUT US</h3> -->
       <section class="container vertical-center" id="about us" >
-<h3 class="text-center font-weight-bold"  style="color:  white">ABOUT US</h3>
+<h3 class="text-center font-weight-bold"  style="color:  gold">ABOUT US</h3>
        <div class="row container-fluid p-5">
         <div class="col-sm-12 col-lg-6 text-success p-5">
 
     <!-- <p style="color:white; text-align:  justify;font-size: 22px;padding: 15px;margin-top: 0px  "> -->
                     <p style="color:white; text-align:  justify;font-size: 25px;  ">
- Let me tell a honey story pay attention listen to me!!
+ <b>Let me tell a honey story pay attention listen to me!!</b>
 
-Hi this is Bhuvanesh (Fitness Enthusiast, Cricketer, Entrepreneur) and coming to the story, I would like to
+Hi this is Bhuvanesh (Fitness Enthusiast, Entrepreneur) and coming to the story, I would like to
 finish it simple.
 Yes ,Honey plays a major role in my life because I&#39;m addicted to the taste of honey in my early ages (
 but I would intake it not often since there is huge demand ) &amp; I lost the addiction towards it for many
@@ -931,11 +1035,6 @@ everywhere like shops, supermarkets, etc..
                                 
 <!--  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
  --> <br><br>
-<strong><b>Conclusion - Go For Real One! </b></strong>
-
-
-
-
 
 </p>
      
@@ -964,6 +1063,9 @@ As a Customer, You get only authentic Environmental friendly Product with Utmost
 <li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong>Compatbility: </b></strong>Our Website is compatible with Desktop&#39;s/Mobile</li>
 <li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Payment Gateway: </b> </strong>Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
 Payment Gateway(Gpay)</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Conclusion: </b> </strong>Go For Real One!</li>
+
+
 </div>  
       </section>
        <br><br><br><br>
@@ -972,7 +1074,7 @@ Payment Gateway(Gpay)</li>
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
          <br><br>
       <section class="container vertical-center" id="products" >
-<h3 class="text-center font-weight-bold" style="color:white">
+<h3 class="text-center font-weight-bold" style="color:gold">
            SHOP</h3>
 
            <br><br><br>
@@ -998,7 +1100,7 @@ Payment Gateway(Gpay)</li>
 <br><br><br>
 <div >
  <button class="btn btn-warning"  data-toggle="modal" id ="warning" data-target="#exampleModalCenter" >
-    <b>  <strong  id ="buylast"style="color: black"  >BUY NOW</strong></b>
+    <b>  <strong  id ="buylast"style="color: black; font-size: 30px"  >BUY NOW</strong></b>
   </button>
 </div>    
       <div class="modal fade bg-secondary" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -1122,6 +1224,9 @@ Chennai-53</p>
 <div id='printchatbox'></div>
 
 <!-- <input type='text' name='fname'id='chatinput'> -->
+
+
+
 <script >
    // var x;
    var y=500;
@@ -1685,6 +1790,7 @@ Chennai-53</p>
   width: 50px;
   text-align: center;
   text-decoration: none;
+  /*color: white;*/
 }
 .fa:hover{
   color:  #FFD700;
