@@ -9,7 +9,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
       <title>Thaenveedu</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
    </head>
    <body>
    	<style>
@@ -39,20 +40,24 @@ body {
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: black;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 12px;
   border-radius: 4px;
+  left:10px;
 }
 
 #myBtn:hover {
   background-color: #FFD700;
 }
+#myBtn:hover span{
+  color: black;
+}
 </style>
 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-icons">arrow_upward</span></button>
 
 
 
@@ -126,7 +131,7 @@ function topFunction() {
          }
          .bi-hexagon:hover {
           scale: 1.015;
-          color: #FFD700;
+          fill: #FFD700;
          }
          .btn.special:hover{
          scale: 1.0;
@@ -701,13 +706,13 @@ font-size:15px;
          <div class="hex">
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text id="font" class="font-weight-bold " id="serv" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;font-color:white">SHOP</text>
                    <text  id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="white" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#products">SHOP</a></text>
                    
                </svg>
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text id="font" class="font-weight-bold " id="serv" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;font-color:white">SERVICES</text>
                    <text  id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="white" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#services">SERVICES</a></text>
@@ -717,7 +722,7 @@ font-size:15px;
          </div>
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                    <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">CONTACT</text>
                    <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#contact">CONTACT</a></text>
@@ -725,13 +730,13 @@ font-size:15px;
                  
                </svg>
                <!-- BUYYYYYYYYYYYYY-->
-              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+              <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
 <a href="#products">       
-  <img  src="drop.jpeg" id="bottle"  alt="honeybottle"style="position: absolute;margin-left: -105px;margin-top: -2px"></a>
+  <img  src="drop.jpeg" id="bottle"  alt="honeybottle"style="position: absolute;margin-left: -105px;margin-top: -2px;top: 27px;"></a>
                </svg>  
                
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                   <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px">FACTS</text>
                    <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#facts">FACTS</a></text>
@@ -740,12 +745,12 @@ font-size:15px;
          </div>
          <div class="row align-items-center text-center">
             <div class="col justify-content-center">
-               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+               <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                    <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">ABOUT US </text>
                    <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#about us" >ABOUT US </a></text>
                </svg>
-                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="#FFD700" xmlns="http://www.w3.org/2000/svg">
+                <svg width="10rem" height="10rem" viewBox="0 0 16 16" class="bi bi-hexagon" fill="white" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" d="M14 4.577L8 1 2 4.577v6.846L8 15l6-3.577V4.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z"/>
                    <text id="font" class="font-weight-bold" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;">JOURNEY </text>
                    <text id="font" class="font-weight-bold inactive" x="50%" y="50%" text-anchor="middle" stroke="black" stroke-width="0px" dy=".3em" style="font-size: 2px;"><a href="#journey">JOURNEY </a></text>
@@ -1121,7 +1126,8 @@ Payment Gateway(Gpay)</li>
  <strong><b id="quatext" style="font-size: 20px; color: black" > 
   <!-- <br><br><br> -->
 <!-- QUANTITY  </b></strong><input type="text" id="box" style="text-align:center;"> -->
-
+<img src="QR.jpeg">
+<br><br><br>
    <label for="cars">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QUANTITY:</label>
   <select name="cars" id="cars">
     <option value="100ml">100 ml</option>
