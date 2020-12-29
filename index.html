@@ -14,6 +14,19 @@
    </head>
    <body>
    	<style>
+   		
+   		ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #FFD700;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
@@ -84,8 +97,12 @@ function topFunction() {
 </script>
 
  <style type="text/css">
-      
-        
+      	.joutit{
+      		color: #FFD700;
+      	}
+        .joupara{
+        	color: white;
+        }
         body{
           overflow-x: hidden;
           color: red;
@@ -442,6 +459,12 @@ font-size:19px;
         }
       }
       @media (min-width: 992px) {
+      	.mapcenter{
+   			 margin: auto;
+  width: 50%;
+  /*border: 3px solid #FFD700;*/
+  padding: -50px;
+   		}
       	 	#myBtn {
       		right: 1250px;
       	}
@@ -772,14 +795,20 @@ font-size:15px;
   <div class="col-sm-12 col-lg-6 p-5">
   
     <p style="color:  white; text-align:  justify;font-size: 35px;">
-
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;" >Find: Deep into the forest in order of searching the honeycomb (Hive)</li>
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;" >Destruct: Destruction process is done in a safe manner in order to extract</li>
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Extract: Extraction is a process done safely in order to get delicious honey</li>
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;">Filter: Filtering is done in order to remove the bees from honey.</li>
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Storage: The filtered honey is stored in a safe manner</li>
-<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; ">Delivery: After ordering the pure honey is delivered to your doorstep</li>
-
+<ul>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;" ><span class="joutit">Find: </span>
+ <span class="joupara">Deep into the forest in order of searching the honeycomb (Hive)</li></span>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;" ><span class="joutit">Destruct:</span>
+ Destruction process is done in a safe manner in order to extract</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; "><span class="joutit">Extract:</span>
+ Extraction is a process done safely in order to get delicious honey</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px;"><span class="joutit">Filter: </span> 
+Filtering is done in order to remove the bees from honey.</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; "><span class="joutit">Storage:</span> 
+The filtered honey is stored in a safe manner</li>
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; "><span class="joutit">Delivery:</span>
+ After ordering the pure honey is delivered to your doorstep</li>
+</ul>
   </p><br>
   </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
@@ -805,6 +834,27 @@ font-size:15px;
     <strong style="font-size: 20px">        <a id="pronav" class="nav-link " href="#must" style=" color: white">MUST NOT DO</a></strong>
          
         </nav>
+
+<br><br>
+<ul>
+        <p>
+
+ <li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Git health </span> - healthy git contributes to a strong immune system, heart health, brain health, improved mood, healthy sleep,  effective digestion & it may help prevent cancer.</li>
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Immune health </span>- Better  immune system is a complex network of cells, tissues & organs. Together they help the body fight infections and other diseases</li>
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Energy -</span> Energy is the fuel for everyday living. Energy is essential to health since raw honey has more calories
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Antioxidants </span>- are substances that may protect your cells against free radicals, which may play a role in heart disease, cancer and other diseases.</li>
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Controls Blood sugar</span>- The blood sugar level, blood sugar concentration, or blood glucose level is the concentration of gluco
+se present in the blood of humans and other animals</li>
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Soothes  Sore throat </span>- Pain or irritation in the throat that can occur with or without swallowing, often accompanies infections, such as a cold or flu will be cleared .</li>
+
+<li style="color:white; text-align: justify; font-size: 23.5px;padding: 3px; right: 100em;"><span class="joutit">Antioxidants </span> - are substances that may protect your cells against free radicals, which may play a role in cancer and other diseases.</li>
+</p>
+</ul>
         <section id ="prop">
 <div class="row container-fluid p-5">
   <div class="col-sm-12 col-lg-6 p-5">
@@ -837,14 +887,15 @@ potassium, and magnesium.
 
            <p style="color:white; text-align: justify; font-size: 20px;padding: 15px; top:20px; ">
 The typical honey profile, according to Bee Source:
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Fructose: 38.2 %</li>
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Glucose: 31.3 %</li>
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Maltose: 7.1 %</li>
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Sucrose: 1.3 %</li>
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Water: 17.2 %</li> 
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Sugars: 1.5 %</li> 
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Ash: 0.2 %</li> 
-<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px ">Other: 3.2 %</li> 
+<ul>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Fructose</span>: 38.2 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Glucose:</span> 31.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Maltose:</span> 7.1 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Sucrose:</span> 1.3 %</li>
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Water:</span> 17.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Sugars:</span> 1.5 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Ash:</span> 0.2 %</li> 
+<li style="color:white; text-align:  left;font-size: 20px;padding: 7px;margin-top: 5px "><span class="joutit">Other:</span>3.2 %</li> 
 </p>
 
 
@@ -902,7 +953,8 @@ RAW HONEY has been used to treat a wide array of illnesses, ailments, and injuri
 
 It can be mixed with other remedies and consumed or rubbed onto the skin. Practitioners of Ayurvedic
 medicine have attempted to use honey as a remedy for the following:
-stress ,weakness ,sleep disturbance, vision problems, bad breath, teeth pain in children over a year old,
+<br>
+Stress ,Weakness ,Sleep disturbance, vision problems, bad breath, teeth pain in children over a year old,
 cough and asthma, hiccups, stomach ulcers, diarrhea and dysentery, vomiting, bedwetting and frequent
 urination, high blood pressure, obesity, jaundice, hangover relief, eczema dermatitis, burns, cuts, and
 wounds arthritis , Good in digestive system &amp; appetizer, Good for bone reunion &amp; eyes , improved skin
@@ -929,7 +981,7 @@ complexion, has Git Ulcer properties , etc .
 
 It is recommended that infants under a year old do not consume honey, Honey may contain botulinum
 endospores that cause infant botulism in very young children, a rare but serious type of food poisoning
-that can result in paralysis. Even pasteurized honey has a chance of containing these spores.While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for
+that can result in <strong><b> paralysis.</b></strong> Even pasteurized honey has a chance of containing these spores.While having an attraction for sweet flavors, and thus sugars, has been an evolutionary benefit for
 thousands of years, it’s become a huge disadvantage to our population over the past century. As sugar
 processing became more advanced, and sugar became a cheap commodity, it seemed that sugar was
 added to almost every processed food in one way or another.
@@ -976,7 +1028,7 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
 <!-- <br><br><br><br><br> -->
 
 <h2 style="color:white; text-align:center;font-size: 30px;padding:0px;margin-top: 10px  ">
-<b></strong>Online Delivery: Buy Honey Online</strong></h2></b>
+<b style="color: #FFD700"></strong>Online Delivery: Buy Honey Online</strong></h2></b>
 
 
 <ul>
@@ -1000,14 +1052,14 @@ come from more natural, and nutritious sweeteners. This is where raw honey takes
   <div class="col-sm-12 col-lg-6 p-5">
     <!-- <br><br><br><br><br> -->
 <br>
-    <h2 style="color:white; text-align:  center;font-size: 39px;padding: 10px;margin-bottom: -20px;position: relative;"><strong>Offline Stores
+    <h2 style="color:white; text-align:  center;font-size: 39px;padding: 10px;margin-bottom: -20px;position: relative;"><strong style="color: #FFD700">Offline Stores
 </strong></h2>
 <br><br>
 </p>
-
+<ul>
 <li style="color:white; text-align:  center;font-size: 32px;">Buy Honey from our Outlets</li>
 <li style="color:white; text-align:  center;font-size: 32px;">All mode of payments accepted</li>
-
+</ul>
   </div>
   <div class="col-sm-12 col-lg-6 text-success p-5">
     <img src="10.png" id="servimg2">
@@ -1067,15 +1119,27 @@ our Body. No Chemicals added in our products.
 As a Customer, You get only authentic Environmental friendly Product with Utmost Quality,
 
 </p>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong>Compatbility: </b></strong>Our Website is compatible with Desktop&#39;s/Mobile</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Payment Gateway: </b> </strong>Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
+<ul>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" >
+<b><strong>	<span class="joutit">Compatbility:</strong></b> </span>Our Website is compatible with Desktop&#39;s/Mobile</li>
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong><span class="joutit">Payment Gateway:</span> </b> </strong>Online Payments are handled by Proven, Genuine, Trusted, 3rd Party World Class
 Payment Gateway(Gpay)</li>
-<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> Conclusion: </b> </strong>Go For Real One!</li>
-
+<li style="color:white; text-align: justify; font-size: 27px;padding: 15px; right: 100em;" ><b><strong> <span class="joutit">Conclusion:</span> </b> </strong>Go For Real One!</li>
+</ul>
 
 </div>  
       </section>
        <br><br><br><br>
+        <!-- <div> -->
+			<!-- 	<iframe frameborder="50" style="border:20; max-height: 190%; width: 100%;"  
+  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyAgxnI1wD_h0Z9ei8alJLuVNnJoK7es_q0&q=sabarivasan+hardwares" allowfullscreen>
+				</iframe>
+ -->
+ <div class="mapcenter">
+<iframe width="665" height="504" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=665&amp;height=504&amp;hl=en&amp;q=No%203A%20RKV%20Avenue%20Extn,Zameen%20pallavaram,%20Chennai%20Chennai+(Thaenveedu)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=9ad9e2b206cfda32dc6dd8e85f058aa2c3184937'></script>
+</div>
+			  <!-- </div> -->
+
       <hr style=" border: 0;
          height: 2px;
          background-image: linear-gradient(to right, #000, #FFD700, #000);">
@@ -1096,15 +1160,19 @@ Payment Gateway(Gpay)</li>
 	<div class="col-lg-4 col-sm-12 col-md-12"><img class="bott3" style="margin-top: 0;" src="bottle.png"  >
 		<figcaption class="figure-caption text-center">500ml</figcaption>
 	</div>
-<br><br><br>
 </div> 
-            
+<br>
+<ul>
+<p><li style="color: white ; font-size:23px ">In case you are not using gpay use the above qr code or 9176026892. Please send to this number</li></p>
+<p><li style="color: white;font-size:23px">Please provide the location and details through whatsapp after making the payments       </li></p>
+<p><li style="color: white;font-size:23px"><strong><b><span class="joutit">Caution:</span></b></strong> Please provide the location and details through whatsapp after making the payments </li></p>
+
      <!-- <div id="ml" style="display: flex;position: relative;"> -->
 
-
+</ul>
 <!-- <button type="button" id="warn" class="btn btn-warning" style="width: 145px;"><strong><b style="font-color:black" id ="buylast">BUY <br>
   NOW</b></strong></button> -->
-<br><br><br>
+<!-- <br><br><br> -->
 <div >
  <button class="btn btn-warning"  data-toggle="modal" id ="warning" data-target="#exampleModalCenter" >
     <b>  <strong  id ="buylast"style="color: black; font-size: 20px"  >BUY NOW</strong></b>
@@ -1141,11 +1209,12 @@ Payment Gateway(Gpay)</li>
                                
 <br><br>
 
-  
+
   <div id="buy-now" style="position: relative;right: -110px; " >                 
                               </div>
-
-       </div>
+<!-- addd caution -->  <br>
+<li style="color: black;font-size:18px; text-align: center;">	<span class="joutit">Caution :</span> 
+Please provide the location and details through whatsapp after making the payments </li>
      </div>
 </div>
  </div>
@@ -1154,13 +1223,14 @@ Payment Gateway(Gpay)</li>
 
 </h3>
 </section>
+<br><br>
 <footer class="text-light bg-dark sticky-bottom" id="contact">
 
   
   <div class="container">
 
     
-    <ul class="list-unstyled list-inline text-center">
+    <div class="list-unstyled list-inline text-center">
 
       <li class="list-inline-item">
         <a href="https://wa.me/+91 9176026892" id="wh1" class="fa fa-whatsapp"style="font-size:32px;color:#b2ec5d"></a>
@@ -1177,7 +1247,8 @@ Payment Gateway(Gpay)</li>
        <li class="list-inline-item">
 <a href="thaenveedu@gmail.com" class="fa fa-google"></a>
       </li>
-    </ul>
+    <!-- </ul> -->
+</div>
 
   </div>
 
@@ -1190,12 +1261,14 @@ Kallikuppam,
 Ambattur, 
 Chennai-53</p>
 
-    <a href="https://brainla.github.io/Web-Portfolio/"> Brainla.com</a>
+    <a href="https://brainla.github.io/WebPortfolio/"> Brainla.com</a>
 
   </div>
 
 </footer>
    </body>
+
+
 <!-- <style >
    .example-address-input{
    
